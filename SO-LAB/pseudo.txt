@@ -1,0 +1,12 @@
+char ** numbers [];
+char * c; //carattere letto
+
+while(*c != FINE){
+	if(*c == 44){
+		while(*c != 44){ //avanzo nella lettura del numero fino alla virgola
+			strcpy(numbers[i][j], *c); //concateno la stringa in posizione i, j con il carattere letto
+		}
+	}else if(*c == 10){
+		i++; //avanzo di una riga nella matrice
+	}
+}

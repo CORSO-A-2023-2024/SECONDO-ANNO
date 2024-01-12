@@ -1,0 +1,5026 @@
+
+	
+    
+    
+
+    if (matrix == NULL) {
+            		z++;
+	int counted_rows = 0;
+		printf("colonna %d: ", i+1);
+    fseek(file, 0, SEEK_SET);
+                // Clean up allocated memory before returning
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+	int counted_cols = 1;
+    
+        for (int j = 0; j < *col; j++) {
+#include <stdio.h>
+                free(matrix[j]);
+	    for (int i = 0; i < row; i++) {
+	    for (int i = 0; i < row; i++) {
+            } else if (c == 10) {
+    counting_cols(col, file);
+	//Operazioni di chiusura files e disallocazione
+		}
+		    printf("[%s]", matrix[i][j]);
+    i = 0; j = 0; z = 0;
+	for(int i = 0; i < row; i++){
+	for(int i = 0; i < row; i++){
+    fseek(file, 0, SEEK_SET);
+	
+}
+	*avg = 0;
+	int close_f, row, col;
+            }
+		for (int j = 0; j < col; j++) {
+	while((c = fgetc(file)) != EOF){
+}
+    }
+            	}
+        }
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+	*max = data[0];
+
+        return NULL;
+	
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+	
+	
+        }
+	
+}
+                // Clean up allocated memory before returning
+            fprintf(stderr, "Memory allocation failed\n");
+		if(c == 10) counted_rows++;
+	}
+
+    counting_cols(col, file);
+}
+            if (c == 44) {
+		if(data[i] < *min){
+	printf("\n[ ");
+        if (i < row && j < col) {
+
+	}
+        }
+	}
+		for(int j = 0; j < row; j++){
+                j++;
+	while((c = fgetc(file)) != EOF){
+		if(c == 44) counted_cols++;
+void calculating(long ** m, int row, int col){
+	
+	
+}
+    if (i < row && j < col) {
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+void populating_matrix(char *** m, int col, int row, FILE * file){
+    counting_cols(col, file);
+void printing_matrix(char *** matrix, int col, int row){
+                free(matrix[j]);
+            fprintf(stderr, "Memory allocation failed\n");
+                i++;
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+	
+    }
+    while ((c = fgetc(file)) != EOF) {
+            fprintf(stderr, "Memory allocation failed\n");
+void printing_int_matrix(long ** m, int row, int col){
+#include <string.h>
+	
+            free(matrix);
+	for(int i = 0; i < length; i++){
+		data_column_process(column, row, &min, &max, &avg);
+	int c;
+
+            // Clean up allocated memory before returning
+int main(int argc, char * argv[]){
+            free(matrix);
+
+}
+		}
+			printf("[%d]", m[i][j]);
+	int close_f, row, col;
+	for(int i = 0; i < row; i++){
+	}
+
+	}
+            		z++;
+	printf("\n[ ");
+void calculating(long ** m, int row, int col){
+}
+    if (i < row && j < col) {
+	int c;
+
+            }
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+	FILE * my_f;
+	}
+            	if(c != 32){
+	
+    }
+		}else if(data[i] > *max){
+		}
+        m[i][j][z] = '\0';
+	FILE * my_f;
+    if (matrix == NULL) {
+
+	
+	//printing_matrix(csv_matrix, col, row);
+		for(int j = 0; j < col; j++){
+void printing_matrix(char *** matrix, int col, int row){
+	free(m);
+    fseek(file, 0, SEEK_SET);
+		}
+                // Clean up allocated memory before returning
+            }
+        }
+                m[i][j][z] = '\0';
+		}else if(data[i] > *max){
+            	if(c != 32){
+    i = 0; j = 0; z = 0;
+                for (int k = 0; k <= i; k++) {
+	}
+            } else {
+char *** generating_matrix(int * row, int * col, FILE * file) {
+
+		free(m[i]);
+            		z++;
+	for(int i = 0; i < row; i++){
+	calculating(matrix, row, col);
+            break;
+#define G 256
+	
+                // Add null terminator at the end of the string
+    for (int i = 0; i < *row; i++) {
+			column[j] = (int) m[j][i];
+			printf("[%d]", m[i][j]);
+    fseek(file, 0, SEEK_SET);
+		}
+		for(int j = 0; j < col; j++){
+		for (int j = 0; j < col; j++) {
+}
+            free(matrix);
+            if (matrix[i][j] == NULL) {
+			column[j] = (int) m[j][i];
+	
+	
+                free(matrix[j]);
+    while ((c = fgetc(file)) != EOF) {
+}
+		printf("\n");
+            // Clean up allocated memory before returning
+            fprintf(stderr, "Memory allocation failed\n");
+
+		for(int j = 0; j < col; j++){
+	printf("\n[ ");
+char *** generating_matrix(int * row, int * col, FILE * file) {
+                fprintf(stderr, "Memory allocation failed\n");
+void printing_matrix(char *** matrix, int col, int row){
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+
+        return NULL;
+	    }
+    for (int i = 0; i < *row; i++) {
+	
+    return matrix;
+    if (i < row && j < col) {
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+	int close_f, row, col;
+void counting_cols(int * col, FILE * file){
+#include <stdlib.h>
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+		}
+            return NULL;
+        }
+
+
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+        }
+		}
+
+            		z++;
+	int counted_cols = 1;
+	*max = data[0];
+		}
+		data_column_process(column, row, &min, &max, &avg);
+	for(int i = 0; i < row; i++){
+
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+	*min = data[0];
+}
+		    printf("[%s]", matrix[i][j]);
+
+            } else if (c == 10) {
+            return NULL;
+void calculating(long ** m, int row, int col){
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+	double avg;
+                i++;
+
+void counting_rows(int * row, FILE * file){
+                j = 0;
+	double somma = 0;
+void counting_cols(int * col, FILE * file){
+	for(int i = 0; i < length; i++){
+    if (i < row && j < col) {
+                j = 0;
+    // Add null terminator for the last string
+		}
+			*min = data[i];
+	//Operazioni di chiusura files e disallocazione
+    if (i < row && j < col) {
+}
+                z = 0;
+
+	
+                j++;
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+	
+		}
+                }
+
+	}
+	printf("\n[ ");
+
+            break;
+	for(int i = 0; i < row; i++){
+                m[i][j][z] = '\0';
+	*col = counted_cols;
+void calculating(long ** m, int row, int col){
+	}
+            } else if (c == 10) {
+    
+	double somma = 0;
+    for (int i = 0; i < *row; i++) {
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+}
+	*min = data[0];
+            		z++;
+		    printf("[%s]", matrix[i][j]);
+        }
+char *** generating_matrix(int * row, int * col, FILE * file) {
+    counting_rows(row, file);
+	for(int i = 0; i < length; i++){
+	}
+	long ** ris = malloc(row * sizeof(*ris));
+		free(m[i]);
+
+        fprintf(stderr, "Invalid matrix dimensions\n");
+	*avg = 0;
+	for(int i = 0; i < row; i++){
+	close_f = fclose(my_f);
+		for(int j = 0; j < row; j++){
+    fseek(file, 0, SEEK_SET);
+	double l = length;
+    }
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+                fprintf(stderr, "Memory allocation failed\n");
+	for(int i = 0; i < col; i++){
+
+            if (matrix[i][j] == NULL) {
+	while((c = fgetc(file)) != EOF){
+	long ** ris = malloc(row * sizeof(*ris));
+            	if(c != 32){
+	
+    }
+        m[i][j][z] = '\0';
+    fseek(file, 0, SEEK_SET);
+}	
+            for (int j = 0; j < i; j++) {
+	//Operazioni di chiusura files e disallocazione
+char *** generating_matrix(int * row, int * col, FILE * file) {
+	for(int i = 0; i < length; i++){
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+	free_matrix(matrix, row, col);
+    }
+	long ** ris = malloc(row * sizeof(*ris));
+int main(int argc, char * argv[]){
+void calculating(long ** m, int row, int col){
+
+                return NULL;
+}
+                z = 0;
+	
+	}
+		for(int j = 0; j < col; j++){
+void free_matrix(long ** m, int row, int col){
+        if (i < row && j < col) {
+	int c;
+
+	for(int i = 0; i < row; i++){
+	for(int i = 0; i < row; i++){
+	double somma = 0;
+    // Add null terminator for the last string
+	int * column = malloc(row * sizeof(*column));
+
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+            		z++;
+		}else if(data[i] > *max){
+void calculating(long ** m, int row, int col){
+	}
+		printf("colonna %d: ", i+1);
+            break;
+
+	double l = length;
+    fseek(file, 0, SEEK_SET);
+	    }
+    fseek(file, 0, SEEK_SET);
+            // Handle the case where i or j exceeds the allocated dimensions
+	}
+	for(int i = 0; i < row; i++){
+}	
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+		}
+	
+		for(int j = 0; j < col; j++){
+	for(int i = 0; i < row; i++){
+		printf("\n");
+}	
+		}
+        fprintf(stderr, "Invalid matrix dimensions\n");
+	for(int i = 0; i < row; i++){
+                fprintf(stderr, "Memory allocation failed\n");
+	while((c = fgetc(file)) != 10){
+	}
+            // Clean up allocated memory before returning
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+void calculating(long ** m, int row, int col){
+		printf("\n");
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+	for(int i = 0; i < length; i++){
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+void counting_rows(int * row, FILE * file){
+    int c, i, j, z;
+		    printf("[%s]", matrix[i][j]);
+        if (matrix[i] == NULL) {
+                // Add null terminator at the end of the string
+                fprintf(stderr, "Memory allocation failed\n");
+			*min = data[i];
+                // Add null terminator at the end of the string
+                z = 0;
+			*min = data[i];
+	*col = counted_cols;
+    fseek(file, 0, SEEK_SET);
+	printf("]\n");
+	*avg = 0;
+
+    return matrix;
+	for(int i = 0; i < row; i++){
+#include <stdio.h>
+	
+        return NULL;
+                fprintf(stderr, "Memory allocation failed\n");
+void counting_rows(int * row, FILE * file){
+            // Handle the case where i or j exceeds the allocated dimensions
+void printing_matrix(char *** matrix, int col, int row){
+	return ris;
+	int c;
+		}
+	}
+
+    // Add null terminator for the last string
+                        free(matrix[k][l]);
+	int c;
+            free(matrix);
+	
+	
+	*avg = 0;
+	}
+    if (matrix == NULL) {
+	
+            // Clean up allocated memory before returning
+    }
+                i++;
+	for(int i = 0; i < length; i++){
+	int c;
+	close_f = fclose(my_f);
+}	
+
+	double l = length;
+}	
+			printf("[%d]", m[i][j]);
+	}
+                // Clean up allocated memory before returning
+void calculating(long ** m, int row, int col){
+    }
+                    free(matrix[k]);
+	long ** ris = malloc(row * sizeof(*ris));
+		for(int j = 0; j < col; j++){
+char *** generating_matrix(int * row, int * col, FILE * file) {
+}
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+	free(m);
+            	if(c != 32){
+		}else if(data[i] > *max){
+            break;
+		data_column_process(column, row, &min, &max, &avg);
+        return NULL;
+		printf("\n");
+	while((c = fgetc(file)) != 10){
+			*min = data[i];
+		if(c == 44) counted_cols++;
+    return matrix;
+		if(c == 10) counted_rows++;
+    fseek(file, 0, SEEK_SET);
+    fseek(file, 0, SEEK_SET);
+            	}
+            for (int j = 0; j < i; j++) {
+    fseek(file, 0, SEEK_SET);
+#include <stdio.h>
+                z = 0;
+            	}
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+            // Clean up allocated memory before returning
+	int * column = malloc(row * sizeof(*column));
+	for(int i = 0; i < row; i++){
+	//printing_matrix(csv_matrix, col, row);
+        return NULL;
+                // Add null terminator at the end of the string
+}
+			*max = data[i];
+		}
+    if (i < row && j < col) {
+                return NULL;
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+}
+		somma += data[i];	
+    }
+                    for (int l = 0; l < j; l++) {
+	printing_int_matrix(matrix, row, col);
+                    for (int l = 0; l < j; l++) {
+        return NULL;
+	}
+	int c;
+	char * endptr;
+                free(matrix[j]);
+                }
+	int * column = malloc(row * sizeof(*column));
+		data_column_process(column, row, &min, &max, &avg);
+			column[j] = (int) m[j][i];
+	//printing_matrix(csv_matrix, col, row);
+                m[i][j][z] = '\0';
+            } else {
+	}
+		}
+		if(c == 10) counted_rows++;
+            for (int j = 0; j < i; j++) {
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+    populating_matrix(matrix, *col, *row, file);
+	*max = data[0];
+            		z++;
+    if (*row <= 0 || *col <= 0) {
+		}else if(data[i] > *max){
+
+}
+        }
+	*max = data[0];
+		}
+void printing_int_matrix(long ** m, int row, int col){
+            }
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+    
+	double l = length;
+	calculating(matrix, row, col);
+    fseek(file, 0, SEEK_SET);
+    counting_cols(col, file);
+    for (int i = 0; i < *row; i++) {
+	for(int i = 0; i < col; i++){
+    // Add null terminator for the last string
+    }
+	int * column = malloc(row * sizeof(*column));
+            	if(c != 32){
+	for(int i = 0; i < row; i++){
+            if (c == 44) {
+
+char *** generating_matrix(int * row, int * col, FILE * file) {
+        fprintf(stderr, "Invalid matrix dimensions\n");
+	for(int i = 0; i < row; i++){
+	FILE * my_f;
+	my_f = fopen(argv[1], "r");
+
+        } else {
+    if (matrix == NULL) {
+            	}
+	}
+    if (matrix == NULL) {
+        }
+
+    if (i < row && j < col) {
+            } else if (c == 10) {
+	
+	int counted_rows = 0;
+        for (int j = 0; j < *col; j++) {
+}
+		printf("\n");
+	}
+		printf("\n");
+
+		if(data[i] < *min){
+    counting_cols(col, file);
+	
+
+		printf("\n");
+	for(int i = 0; i < row; i++){
+	int close_f, row, col;
+	int min, max;
+#include <string.h>
+    }
+
+void printing_matrix(char *** matrix, int col, int row){
+
+#include <string.h>
+    // Add null terminator for the last string
+		free(m[i]);
+        } else {
+                // Add null terminator at the end of the string
+            } else if (c == 10) {
+
+		printf("colonna %d: ", i+1);
+                        free(matrix[k][l]);
+                // Add null terminator at the end of the string
+	int close_f, row, col;
+		printf("\n");
+		if(data[i] < *min){
+	for(int i = 0; i < row; i++){
+}
+	}	
+	printf("\n[ ");
+                // Clean up allocated memory before returning
+                for (int k = 0; k <= i; k++) {
+                m[i][j][z] = '\0';
+
+            } else {
+#include <stdlib.h>
+                z = 0;
+            	}
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+    counting_rows(row, file);
+	return ris;
+                    }
+        }
+	
+                }
+	double l = length;
+	for(int i = 0; i < length; i++){
+		data_column_process(column, row, &min, &max, &avg);
+	int c;
+}
+	}
+
+		ris[i] = malloc(col * sizeof(**ris));
+	int c;
+	//Operazioni di chiusura files e disallocazione
+    if (matrix == NULL) {
+
+	}	
+                j = 0;
+	
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+	}
+	int counted_cols = 1;
+}
+        }
+            free(matrix);
+		}else if(data[i] > *max){
+	
+		somma += data[i];	
+	double l = length;
+	printing_int_matrix(matrix, row, col);
+        }
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+        if (matrix[i] == NULL) {
+                return NULL;
+	}
+        }
+
+		if(data[i] < *min){
+            free(matrix);
+    for (int i = 0; i < *row; i++) {
+	}
+                    free(matrix[k]);
+	int counted_cols = 1;
+
+                        free(matrix[k][l]);
+                    }
+int main(int argc, char * argv[]){
+                m[i][j][z] = '\0';
+
+                free(matrix);
+}
+
+	*min = data[0];
+                // Clean up allocated memory before returning
+		}
+        m[i][j][z] = '\0';
+    if (matrix == NULL) {
+void printing_int_matrix(long ** m, int row, int col){
+	int counted_cols = 1;
+void populating_matrix(char *** m, int col, int row, FILE * file){
+	}
+		}
+                free(matrix);
+            		m[i][j][z] = c;
+                m[i][j][z] = '\0';
+                free(matrix);
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+	}
+
+		if(c == 10) counted_rows++;
+
+void counting_cols(int * col, FILE * file){
+	}	
+            break;
+	int c;
+                m[i][j][z] = '\0';
+		}else if(data[i] > *max){
+	    for (int i = 0; i < row; i++) {
+            // Clean up allocated memory before returning
+
+
+                z = 0;
+        return NULL;
+    }
+	*avg = somma / l;
+                free(matrix[j]);
+		}
+                m[i][j][z] = '\0';
+            } else if (c == 10) {
+	my_f = fopen(argv[1], "r");
+        for (int j = 0; j < *col; j++) {
+	my_f = fopen(argv[1], "r");
+	
+}
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+	
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+
+
+	    }
+	*row = counted_rows;
+	}
+            }
+			*max = data[i];
+void printing_matrix(char *** matrix, int col, int row){
+
+void printing_matrix(char *** matrix, int col, int row){
+	*avg = somma / l;
+                        free(matrix[k][l]);
+    populating_matrix(matrix, *col, *row, file);
+
+    
+		printf("colonna %d: ", i+1);
+
+			printf("[%d]", m[i][j]);
+		}
+                    }
+                fprintf(stderr, "Memory allocation failed\n");
+	while((c = fgetc(file)) != 10){
+	}
+                }
+	for(int i = 0; i < row; i++){
+	double somma = 0;
+            } else {
+void free_matrix(long ** m, int row, int col){
+		if(c == 44) counted_cols++;
+    while ((c = fgetc(file)) != EOF) {
+            // Clean up allocated memory before returning
+		}
+	double somma = 0;
+                fprintf(stderr, "Memory allocation failed\n");
+	*col = counted_cols;
+                // Clean up allocated memory before returning
+	double somma = 0;
+		}
+                    free(matrix[k]);
+	*col = counted_cols;
+void counting_rows(int * row, FILE * file){
+            for (int j = 0; j < i; j++) {
+	return ris;
+	}
+
+	int close_f, row, col;
+	}	
+        } else {
+	for(int i = 0; i < row; i++){
+                    free(matrix[k]);
+			column[j] = (int) m[j][i];
+                // Add null terminator at the end of the string
+	
+
+	for(int i = 0; i < row; i++){
+    counting_cols(col, file);
+            return NULL;
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+void populating_matrix(char *** m, int col, int row, FILE * file){
+	long ** ris = malloc(row * sizeof(*ris));
+                j = 0;
+	long ** ris = malloc(row * sizeof(*ris));
+}
+	while((c = fgetc(file)) != EOF){
+		if(c == 10) counted_rows++;
+	
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+void calculating(long ** m, int row, int col){
+#define G 256
+                j++;
+	while((c = fgetc(file)) != EOF){
+        if (i < row && j < col) {
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+}	
+	//printing_matrix(csv_matrix, col, row);
+	*max = data[0];
+	}	
+                // Add null terminator at the end of the string
+            }
+		if(c == 44) counted_cols++;
+	*row = counted_rows;
+	
+	printf("]\n");
+		}else if(data[i] > *max){
+            free(matrix);
+		if(c == 44) counted_cols++;
+
+                        free(matrix[k][l]);
+        }
+		printf("\n");
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+	free_matrix(matrix, row, col);
+	for(int i = 0; i < length; i++){
+	*avg = somma / l;
+
+	int min, max;
+                    for (int l = 0; l < j; l++) {
+#include <stdlib.h>
+		for(int j = 0; j < row; j++){
+			*max = data[i];
+            if (c == 44) {
+
+    }
+
+}
+                // Clean up allocated memory before returning
+	for(int i = 0; i < col; i++){
+	for(int i = 0; i < row; i++){
+void free_matrix(long ** m, int row, int col){
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+}	
+}	
+    i = 0; j = 0; z = 0;
+	printf("]\n");
+
+	for(int i = 0; i < row; i++){
+int main(int argc, char * argv[]){
+
+	}
+    // Add null terminator for the last string
+                // Add null terminator at the end of the string
+	free_matrix(matrix, row, col);
+            // Handle the case where i or j exceeds the allocated dimensions
+#include <stdio.h>
+	}
+            // Clean up allocated memory before returning
+	
+    }
+            for (int j = 0; j < i; j++) {
+	int close_f, row, col;
+                // Add null terminator at the end of the string
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+	int counted_rows = 0;
+	double avg;
+	*min = data[0];
+	}
+            }
+	for(int i = 0; i < row; i++){
+}	
+    int c, i, j, z;
+	}
+}	
+void counting_rows(int * row, FILE * file){
+    if (i < row && j < col) {
+		}
+	for(int i = 0; i < col; i++){
+void printing_matrix(char *** matrix, int col, int row){
+	
+		for (int j = 0; j < col; j++) {
+    int c, i, j, z;
+	close_f = fclose(my_f);
+            		m[i][j][z] = c;
+	}
+        } else {
+    fseek(file, 0, SEEK_SET);
+		for (int j = 0; j < col; j++) {
+
+    // Add null terminator for the last string
+            }
+            	if(c != 32){
+                i++;
+	int * column = malloc(row * sizeof(*column));
+	
+    if (i < row && j < col) {
+			*max = data[i];
+		somma += data[i];	
+                return NULL;
+            	}
+                return NULL;
+                return NULL;
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+	*avg = 0;
+            for (int j = 0; j < i; j++) {
+	char * endptr;
+    
+	while((c = fgetc(file)) != 10){
+            free(matrix);
+                m[i][j][z] = '\0';
+	*avg = somma / l;
+	char * endptr;
+            }
+		somma += data[i];	
+}
+		}
+        if (i < row && j < col) {
+        if (i < row && j < col) {
+		somma += data[i];	
+	
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+            free(matrix);
+                j = 0;
+		}else if(data[i] > *max){
+        m[i][j][z] = '\0';
+                j++;
+}
+	int c;
+
+}
+
+	return ris;
+        } else {
+		data_column_process(column, row, &min, &max, &avg);
+                    }
+void free_matrix(long ** m, int row, int col){
+
+		}
+
+	}
+	free_matrix(matrix, row, col);
+void printing_int_matrix(long ** m, int row, int col){
+	}
+        if (matrix[i] == NULL) {
+
+
+            } else if (c == 10) {
+	double l = length;
+
+	    for (int i = 0; i < row; i++) {
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+
+            if (matrix[i][j] == NULL) {
+	
+	int counted_cols = 1;
+		printf("colonna %d: ", i+1);
+            // Handle the case where i or j exceeds the allocated dimensions
+
+}
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+	    }
+
+	}
+
+    return matrix;
+	return ris;
+		if(c == 44) counted_cols++;
+            		m[i][j][z] = c;
+    counting_rows(row, file);
+	
+
+
+}
+                z = 0;
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+}
+	
+
+    while ((c = fgetc(file)) != EOF) {
+void free_matrix(long ** m, int row, int col){
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+	FILE * my_f;
+	    for (int i = 0; i < row; i++) {
+	double avg;
+	close_f = fclose(my_f);
+            		z++;
+	*max = data[0];
+
+	for(int i = 0; i < row; i++){
+	
+	*min = data[0];
+	free(m);
+		for(int j = 0; j < col; j++){
+		}
+
+                j++;
+                return NULL;
+            break;
+        }
+	
+    fseek(file, 0, SEEK_SET);
+	
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+            if (c == 44) {
+                j = 0;
+
+	
+	*row = counted_rows;
+
+	printf("\n[ ");
+			*max = data[i];
+	double avg;
+		if(data[i] < *min){
+	my_f = fopen(argv[1], "r");
+		free(m[i]);
+	printf("]\n");
+            break;
+    return matrix;
+	*col = counted_cols;
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+	for(int i = 0; i < row; i++){
+	//Operazioni di chiusura files e disallocazione
+	printf("]\n");
+            		m[i][j][z] = c;
+	calculating(matrix, row, col);
+	my_f = fopen(argv[1], "r");
+        }
+                for (int k = 0; k <= i; k++) {
+    }
+		if(c == 10) counted_rows++;
+}
+	double l = length;
+void counting_cols(int * col, FILE * file){
+}
+	
+    fseek(file, 0, SEEK_SET);
+            if (matrix[i][j] == NULL) {
+    }
+            for (int j = 0; j < i; j++) {
+
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+            		m[i][j][z] = c;
+
+                // Add null terminator at the end of the string
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+
+}
+
+    }
+                z = 0;
+                    free(matrix[k]);
+	while((c = fgetc(file)) != 10){
+}
+    if (i < row && j < col) {
+    }
+            break;
+
+
+	printf("]\n");
+
+void counting_cols(int * col, FILE * file){
+            }
+                    for (int l = 0; l < j; l++) {
+                i++;
+                        free(matrix[k][l]);
+
+void printing_int_matrix(long ** m, int row, int col){
+}
+                j++;
+
+    int c, i, j, z;
+	for(int i = 0; i < row; i++){
+            }
+        if (i < row && j < col) {
+}
+}
+
+	
+    if (matrix == NULL) {
+                free(matrix);
+            	}
+int main(int argc, char * argv[]){
+}
+}
+    }
+		if(c == 44) counted_cols++;
+	int min, max;
+
+void populating_matrix(char *** m, int col, int row, FILE * file){
+
+}
+    if (*row <= 0 || *col <= 0) {
+                // Add null terminator at the end of the string
+	int counted_rows = 0;
+	char * endptr;
+		}else if(data[i] > *max){
+	free(m);
+    fseek(file, 0, SEEK_SET);
+		data_column_process(column, row, &min, &max, &avg);
+	my_f = fopen(argv[1], "r");
+            return NULL;
+	    }
+
+#define G 256
+char *** generating_matrix(int * row, int * col, FILE * file) {
+                fprintf(stderr, "Memory allocation failed\n");
+void calculating(long ** m, int row, int col){
+    fseek(file, 0, SEEK_SET);
+    for (int i = 0; i < *row; i++) {
+            } else {
+		}
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+
+	}
+    counting_cols(col, file);
+    populating_matrix(matrix, *col, *row, file);
+	printf("\n[ ");
+            } else if (c == 10) {
+    // Add null terminator for the last string
+	
+		}
+	calculating(matrix, row, col);
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+                z = 0;
+		printf("\n");
+	int counted_rows = 0;
+		if(c == 44) counted_cols++;
+		for(int j = 0; j < row; j++){
+            fprintf(stderr, "Memory allocation failed\n");
+	    for (int i = 0; i < row; i++) {
+			*max = data[i];
+	close_f = fclose(my_f);
+        if (i < row && j < col) {
+            return NULL;
+#include <stdlib.h>
+                    }
+	
+	int * column = malloc(row * sizeof(*column));
+	
+        }
+		if(c == 10) counted_rows++;
+	
+            	if(c != 32){
+char *** generating_matrix(int * row, int * col, FILE * file) {
+	long ** ris = malloc(row * sizeof(*ris));
+	}
+		data_column_process(column, row, &min, &max, &avg);
+        fprintf(stderr, "Invalid matrix dimensions\n");
+#include <stdio.h>
+        }
+    if (matrix == NULL) {
+		}
+            	}
+	for(int i = 0; i < length; i++){
+        return NULL;
+        return NULL;
+	
+                        free(matrix[k][l]);
+        return NULL;
+    if (matrix == NULL) {
+		}
+            if (c == 44) {
+
+		somma += data[i];	
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+    if (matrix == NULL) {
+            fprintf(stderr, "Memory allocation failed\n");
+	}
+    counting_rows(row, file);
+        return NULL;
+            	}
+            fprintf(stderr, "Memory allocation failed\n");
+    fseek(file, 0, SEEK_SET);
+	for(int i = 0; i < row; i++){
+	
+		printf("\n");
+    // Add null terminator for the last string
+	double avg;
+    for (int i = 0; i < *row; i++) {
+    if (matrix == NULL) {
+            	if(c != 32){
+
+            // Clean up allocated memory before returning
+	
+		if(data[i] < *min){
+		}
+	*row = counted_rows;
+	*max = data[0];
+
+        for (int j = 0; j < *col; j++) {
+}
+	    }
+
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+		for(int j = 0; j < row; j++){
+        return NULL;
+void printing_matrix(char *** matrix, int col, int row){
+        return NULL;
+                m[i][j][z] = '\0';
+            return NULL;
+			*max = data[i];
+    }
+	close_f = fclose(my_f);
+            	}
+
+	double avg;
+        m[i][j][z] = '\0';
+        }
+		free(m[i]);
+	}
+	
+}
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+
+
+	for(int i = 0; i < row; i++){
+        }
+	double somma = 0;
+        for (int j = 0; j < *col; j++) {
+
+                z = 0;
+		free(m[i]);
+	double l = length;
+	close_f = fclose(my_f);
+    counting_cols(col, file);
+}
+    if (matrix == NULL) {
+
+	}
+		}
+	
+		    printf("[%s]", matrix[i][j]);
+            } else {
+	
+    if (matrix == NULL) {
+            if (matrix[i][j] == NULL) {
+		}
+
+		if(c == 44) counted_cols++;
+}
+	for(int i = 0; i < row; i++){
+    i = 0; j = 0; z = 0;
+	double l = length;
+            }
+	}
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+    while ((c = fgetc(file)) != EOF) {
+void printing_matrix(char *** matrix, int col, int row){
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+	return ris;
+	free(m);
+                    }
+        }
+	char * endptr;
+                    for (int l = 0; l < j; l++) {
+	}
+
+#include <stdio.h>
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+
+		}
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+		printf("\n");
+	int close_f, row, col;
+    fseek(file, 0, SEEK_SET);
+		if(c == 10) counted_rows++;
+                        free(matrix[k][l]);
+char *** generating_matrix(int * row, int * col, FILE * file) {
+		printf("colonna %d: ", i+1);
+	}
+		    printf("[%s]", matrix[i][j]);
+                        free(matrix[k][l]);
+			*max = data[i];
+		}else if(data[i] > *max){
+	calculating(matrix, row, col);
+                free(matrix[j]);
+
+	*col = counted_cols;
+
+	
+		printf("colonna %d: ", i+1);
+    if (i < row && j < col) {
+            } else if (c == 10) {
+    fseek(file, 0, SEEK_SET);
+		printf("colonna %d: ", i+1);
+		free(m[i]);
+            // Handle the case where i or j exceeds the allocated dimensions
+    }
+		somma += data[i];	
+void printing_int_matrix(long ** m, int row, int col){
+	printing_int_matrix(matrix, row, col);
+                for (int k = 0; k <= i; k++) {
+            if (c == 44) {
+}
+                }
+            }
+
+		for (int j = 0; j < col; j++) {
+	free_matrix(matrix, row, col);
+	free(m);
+	printf("\n[ ");
+#define G 256
+char *** generating_matrix(int * row, int * col, FILE * file) {
+
+int main(int argc, char * argv[]){
+    if (i < row && j < col) {
+	while((c = fgetc(file)) != 10){
+
+            }
+	}
+	
+        if (matrix[i] == NULL) {
+	}
+            } else {
+		}
+	while((c = fgetc(file)) != EOF){
+	    }
+void populating_matrix(char *** m, int col, int row, FILE * file){
+    if (matrix == NULL) {
+	for(int i = 0; i < col; i++){
+	FILE * my_f;
+    fseek(file, 0, SEEK_SET);
+        fprintf(stderr, "Invalid matrix dimensions\n");
+
+
+	close_f = fclose(my_f);
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+		}
+	int counted_cols = 1;
+		free(m[i]);
+	printf("\n[ ");
+		data_column_process(column, row, &min, &max, &avg);
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+void counting_cols(int * col, FILE * file){
+}
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+                        free(matrix[k][l]);
+}
+	int c;
+	    }
+                fprintf(stderr, "Memory allocation failed\n");
+}
+
+		}
+            // Clean up allocated memory before returning
+            return NULL;
+	*avg = 0;
+                fprintf(stderr, "Memory allocation failed\n");
+		free(m[i]);
+    int c, i, j, z;
+
+		}
+	}	
+	*avg = somma / l;
+
+	}
+	}
+		}
+	
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+        return NULL;
+
+
+char *** generating_matrix(int * row, int * col, FILE * file) {
+	//printing_matrix(csv_matrix, col, row);
+                        free(matrix[k][l]);
+    while ((c = fgetc(file)) != EOF) {
+            free(matrix);
+        m[i][j][z] = '\0';
+    counting_cols(col, file);
+		ris[i] = malloc(col * sizeof(**ris));
+			*min = data[i];
+            }
+                // Add null terminator at the end of the string
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+	//Operazioni di chiusura files e disallocazione
+	return ris;
+            		m[i][j][z] = c;
+        for (int j = 0; j < *col; j++) {
+        fprintf(stderr, "Invalid matrix dimensions\n");
+                    for (int l = 0; l < j; l++) {
+}
+
+                m[i][j][z] = '\0';
+	double somma = 0;
+	//printing_matrix(csv_matrix, col, row);
+		    printf("[%s]", matrix[i][j]);
+
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+}	
+	for(int i = 0; i < row; i++){
+	}
+
+    populating_matrix(matrix, *col, *row, file);
+
+		}
+void counting_rows(int * row, FILE * file){
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+}
+        return NULL;
+	}
+	int * column = malloc(row * sizeof(*column));
+        } else {
+	}
+		    printf("[%s]", matrix[i][j]);
+	int * column = malloc(row * sizeof(*column));
+		for(int j = 0; j < col; j++){
+	}
+	*row = counted_rows;
+}
+    int c, i, j, z;
+
+		for (int j = 0; j < col; j++) {
+        } else {
+	int close_f, row, col;
+			*min = data[i];
+}
+	printing_int_matrix(matrix, row, col);
+
+		}
+	printing_int_matrix(matrix, row, col);
+	}
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+
+	*min = data[0];
+void calculating(long ** m, int row, int col){
+            if (matrix[i][j] == NULL) {
+		somma += data[i];	
+	long ** ris = malloc(row * sizeof(*ris));
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+        }
+		}
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+    populating_matrix(matrix, *col, *row, file);
+
+	for(int i = 0; i < row; i++){
+    }
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+
+	for(int i = 0; i < row; i++){
+    int c, i, j, z;
+
+        return NULL;
+                m[i][j][z] = '\0';
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+
+		if(c == 10) counted_rows++;
+    fseek(file, 0, SEEK_SET);
+
+
+        return NULL;
+    counting_cols(col, file);
+	*max = data[0];
+			printf("[%d]", m[i][j]);
+
+                    for (int l = 0; l < j; l++) {
+                free(matrix);
+		}
+    for (int i = 0; i < *row; i++) {
+	int counted_cols = 1;
+        fprintf(stderr, "Invalid matrix dimensions\n");
+			*max = data[i];
+			*max = data[i];
+	
+    if (*row <= 0 || *col <= 0) {
+                z = 0;
+}
+	for(int i = 0; i < col; i++){
+                m[i][j][z] = '\0';
+		if(c == 10) counted_rows++;
+    return matrix;
+    fseek(file, 0, SEEK_SET);
+void printing_int_matrix(long ** m, int row, int col){
+	free_matrix(matrix, row, col);
+	
+
+    if (i < row && j < col) {
+}
+
+		printf("\n");
+        fprintf(stderr, "Memory allocation failed\n");
+        }
+	}
+            		m[i][j][z] = c;
+            	if(c != 32){
+        }
+	int * column = malloc(row * sizeof(*column));
+	printf("\n[ ");
+
+        fprintf(stderr, "Invalid matrix dimensions\n");
+	close_f = fclose(my_f);
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+    while ((c = fgetc(file)) != EOF) {
+	}
+    counting_rows(row, file);
+		}
+		if(c == 44) counted_cols++;
+#define G 256
+                    for (int l = 0; l < j; l++) {
+
+}
+	int c;
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+	
+		printf("\n");
+                }
+    return matrix;
+    fseek(file, 0, SEEK_SET);
+
+	free(m);
+	*col = counted_cols;
+	int min, max;
+    }
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+}
+            }
+
+	    }
+    }
+			printf("[%d]", m[i][j]);
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+                for (int k = 0; k <= i; k++) {
+    
+	}
+        fprintf(stderr, "Memory allocation failed\n");
+                        free(matrix[k][l]);
+
+                free(matrix);
+	for(int i = 0; i < row; i++){
+}
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+	}
+#include <stdlib.h>
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+	printf("]\n");
+void populating_matrix(char *** m, int col, int row, FILE * file){
+    fseek(file, 0, SEEK_SET);
+            }
+		ris[i] = malloc(col * sizeof(**ris));
+	for(int i = 0; i < row; i++){
+        if (i < row && j < col) {
+	*min = data[0];
+    return matrix;
+        for (int j = 0; j < *col; j++) {
+	int counted_cols = 1;
+	printf("\n[ ");
+void counting_cols(int * col, FILE * file){
+	printf("]\n");
+	int close_f, row, col;
+                    free(matrix[k]);
+    populating_matrix(matrix, *col, *row, file);
+            for (int j = 0; j < i; j++) {
+
+	free(m);
+	}
+                    }
+    counting_rows(row, file);
+        }
+		printf("\n");
+}
+        fprintf(stderr, "Memory allocation failed\n");
+}
+		}
+                for (int k = 0; k <= i; k++) {
+	my_f = fopen(argv[1], "r");
+void printing_int_matrix(long ** m, int row, int col){
+}
+    }
+	int c;
+            }
+}
+        fprintf(stderr, "Memory allocation failed\n");
+
+		for(int j = 0; j < col; j++){
+		for(int j = 0; j < row; j++){
+                j = 0;
+        }
+	//Operazioni di chiusura files e disallocazione
+
+        }
+	for(int i = 0; i < row; i++){
+	for(int i = 0; i < row; i++){
+
+	}
+        fprintf(stderr, "Memory allocation failed\n");
+		}
+            } else {
+}
+		ris[i] = malloc(col * sizeof(**ris));
+
+	}
+}
+            if (matrix[i][j] == NULL) {
+	printf("]\n");
+}
+                    free(matrix[k]);
+        }
+
+		}
+	double l = length;
+		free(m[i]);
+int main(int argc, char * argv[]){
+    int c, i, j, z;
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+		}
+		if(c == 44) counted_cols++;
+}
+                j = 0;
+                // Add null terminator at the end of the string
+        } else {
+	}
+		somma += data[i];	
+	
+}
+		}
+            fprintf(stderr, "Memory allocation failed\n");
+
+	free_matrix(matrix, row, col);
+        fprintf(stderr, "Invalid matrix dimensions\n");
+                free(matrix[j]);
+
+        } else {
+	
+	//printing_matrix(csv_matrix, col, row);
+}
+    counting_cols(col, file);
+        }
+		printf("\n");
+			*max = data[i];
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+    }
+	for(int i = 0; i < row; i++){
+        }
+void free_matrix(long ** m, int row, int col){
+            }
+	int c;
+	
+	}	
+    if (i < row && j < col) {
+
+			column[j] = (int) m[j][i];
+	*row = counted_rows;
+void counting_rows(int * row, FILE * file){
+int main(int argc, char * argv[]){
+		data_column_process(column, row, &min, &max, &avg);
+
+            for (int j = 0; j < i; j++) {
+
+			printf("[%d]", m[i][j]);
+		}
+            if (c == 44) {
+	*col = counted_cols;
+	int counted_rows = 0;
+	my_f = fopen(argv[1], "r");
+		if(c == 10) counted_rows++;
+
+    }
+	return ris;
+void counting_cols(int * col, FILE * file){
+            break;
+void printing_matrix(char *** matrix, int col, int row){
+
+}	
+    }
+
+
+
+    }
+void counting_rows(int * row, FILE * file){
+	for(int i = 0; i < length; i++){
+
+		}
+	
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+		for(int j = 0; j < row; j++){
+            fprintf(stderr, "Memory allocation failed\n");
+                // Clean up allocated memory before returning
+	}	
+	int c;
+    }
+	}
+    fseek(file, 0, SEEK_SET);
+            if (matrix[i][j] == NULL) {
+	
+            }
+		}
+        m[i][j][z] = '\0';
+                // Add null terminator at the end of the string
+	int close_f, row, col;
+	char * endptr;
+                // Add null terminator at the end of the string
+			printf("[%d]", m[i][j]);
+	char * endptr;
+	for(int i = 0; i < row; i++){
+
+		}
+#include <string.h>
+
+void counting_cols(int * col, FILE * file){
+		data_column_process(column, row, &min, &max, &avg);
+	while((c = fgetc(file)) != 10){
+void populating_matrix(char *** m, int col, int row, FILE * file){
+	
+	double somma = 0;
+            } else if (c == 10) {
+void calculating(long ** m, int row, int col){
+                // Add null terminator at the end of the string
+			*max = data[i];
+    populating_matrix(matrix, *col, *row, file);
+        return NULL;
+                // Add null terminator at the end of the string
+
+	int min, max;
+}
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+    if (matrix == NULL) {
+		ris[i] = malloc(col * sizeof(**ris));
+	for(int i = 0; i < length; i++){
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+		for(int j = 0; j < col; j++){
+
+			*min = data[i];
+    }
+void populating_matrix(char *** m, int col, int row, FILE * file){
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+            return NULL;
+                z = 0;
+                free(matrix);
+void printing_matrix(char *** matrix, int col, int row){
+}
+                    free(matrix[k]);
+            		m[i][j][z] = c;
+}
+                fprintf(stderr, "Memory allocation failed\n");
+}
+			column[j] = (int) m[j][i];
+            fprintf(stderr, "Memory allocation failed\n");
+    if (matrix == NULL) {
+	printf("]\n");
+	close_f = fclose(my_f);
+			*min = data[i];
+}
+        }
+	*max = data[0];
+			*min = data[i];
+	int counted_cols = 1;
+}
+        return NULL;
+#include <stdlib.h>
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+		if(c == 44) counted_cols++;
+        for (int j = 0; j < *col; j++) {
+	}
+            for (int j = 0; j < i; j++) {
+		}
+            	if(c != 32){
+#include <stdio.h>
+	
+	printf("\n[ ");
+	while((c = fgetc(file)) != 10){
+    counting_cols(col, file);
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+        return NULL;
+	int close_f, row, col;
+	free_matrix(matrix, row, col);
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+}	
+
+		for(int j = 0; j < row; j++){
+		}
+                for (int k = 0; k <= i; k++) {
+	*avg = 0;
+	printf("]\n");
+}
+	
+
+        } else {
+	*avg = 0;
+	int counted_rows = 0;
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+	}
+            } else if (c == 10) {
+	int * column = malloc(row * sizeof(*column));
+    for (int i = 0; i < *row; i++) {
+	*min = data[0];
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+void printing_int_matrix(long ** m, int row, int col){
+	*max = data[0];
+                    free(matrix[k]);
+                return NULL;
+	free_matrix(matrix, row, col);
+		for(int j = 0; j < row; j++){
+void printing_matrix(char *** matrix, int col, int row){
+                free(matrix[j]);
+		data_column_process(column, row, &min, &max, &avg);
+#include <stdio.h>
+	
+		data_column_process(column, row, &min, &max, &avg);
+
+	}
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+	FILE * my_f;
+	*avg = 0;
+    if (*row <= 0 || *col <= 0) {
+    int c, i, j, z;
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+		    printf("[%s]", matrix[i][j]);
+        if (matrix[i] == NULL) {
+    fseek(file, 0, SEEK_SET);
+	int c;
+		}else if(data[i] > *max){
+		    printf("[%s]", matrix[i][j]);
+
+}
+            return NULL;
+	int counted_rows = 0;
+char *** generating_matrix(int * row, int * col, FILE * file) {
+                i++;
+	
+	double avg;
+	double somma = 0;
+}	
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+	printf("]\n");
+    fseek(file, 0, SEEK_SET);
+	}
+		}
+    }
+	for(int i = 0; i < row; i++){
+    // Add null terminator for the last string
+    }
+    if (i < row && j < col) {
+    }
+            	if(c != 32){
+	double l = length;
+
+	}
+		}else if(data[i] > *max){
+#include <stdio.h>
+	int c;
+	FILE * my_f;
+		}else if(data[i] > *max){
+            } else if (c == 10) {
+    fseek(file, 0, SEEK_SET);
+
+	for(int i = 0; i < row; i++){
+                }
+		data_column_process(column, row, &min, &max, &avg);
+	close_f = fclose(my_f);
+            }
+	int * column = malloc(row * sizeof(*column));
+	int * column = malloc(row * sizeof(*column));
+            free(matrix);
+			printf("[%d]", m[i][j]);
+	free(m);
+
+                for (int k = 0; k <= i; k++) {
+	}	
+
+                m[i][j][z] = '\0';
+int main(int argc, char * argv[]){
+	double l = length;
+	
+
+}
+    }
+		data_column_process(column, row, &min, &max, &avg);
+	
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+	close_f = fclose(my_f);
+	*row = counted_rows;
+    // Add null terminator for the last string
+		printf("colonna %d: ", i+1);
+        m[i][j][z] = '\0';
+	}
+                free(matrix[j]);
+	int counted_rows = 0;
+    i = 0; j = 0; z = 0;
+            // Clean up allocated memory before returning
+void counting_rows(int * row, FILE * file){
+		free(m[i]);
+        }
+	FILE * my_f;
+    while ((c = fgetc(file)) != EOF) {
+
+	return ris;
+	while((c = fgetc(file)) != EOF){
+
+            }
+        }
+		}
+            // Handle the case where i or j exceeds the allocated dimensions
+
+                for (int k = 0; k <= i; k++) {
+	}
+                free(matrix);
+	
+	char * endptr;
+            free(matrix);
+            	}
+		for(int j = 0; j < col; j++){
+
+	return ris;
+
+	
+    // Add null terminator for the last string
+
+		    printf("[%s]", matrix[i][j]);
+    populating_matrix(matrix, *col, *row, file);
+        }
+
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+	
+	    for (int i = 0; i < row; i++) {
+    }
+		if(c == 10) counted_rows++;
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+	*max = data[0];
+		    printf("[%s]", matrix[i][j]);
+                j++;
+		}
+
+		for(int j = 0; j < col; j++){
+                z = 0;
+
+void populating_matrix(char *** m, int col, int row, FILE * file){
+                // Add null terminator at the end of the string
+		if(data[i] < *min){
+	for(int i = 0; i < row; i++){
+}
+        }
+    if (*row <= 0 || *col <= 0) {
+                i++;
+	    for (int i = 0; i < row; i++) {
+                j = 0;
+	
+	*col = counted_cols;
+    if (*row <= 0 || *col <= 0) {
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+	printf("]\n");
+        for (int j = 0; j < *col; j++) {
+
+	for(int i = 0; i < row; i++){
+	for(int i = 0; i < row; i++){
+
+		}else if(data[i] > *max){
+    }
+}
+	return ris;
+                    }
+		if(c == 44) counted_cols++;
+        }
+	
+	double somma = 0;
+	for(int i = 0; i < row; i++){
+		if(c == 44) counted_cols++;
+#define G 256
+}
+	int close_f, row, col;
+	free(m);
+                    for (int l = 0; l < j; l++) {
+            if (matrix[i][j] == NULL) {
+	}
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+                    free(matrix[k]);
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+        }
+	double somma = 0;
+	for(int i = 0; i < length; i++){
+	}
+		}
+
+    }
+                free(matrix[j]);
+	printing_int_matrix(matrix, row, col);
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+    counting_cols(col, file);
+    counting_rows(row, file);
+    for (int i = 0; i < *row; i++) {
+#include <stdio.h>
+	double avg;
+	return ris;
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+		}
+    }
+#include <string.h>
+
+                    free(matrix[k]);
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+    fseek(file, 0, SEEK_SET);
+            }
+            fprintf(stderr, "Memory allocation failed\n");
+            for (int j = 0; j < i; j++) {
+    }
+		printf("\n");
+	printing_int_matrix(matrix, row, col);
+	int close_f, row, col;
+}	
+void calculating(long ** m, int row, int col){
+void calculating(long ** m, int row, int col){
+            }
+            } else if (c == 10) {
+
+		if(c == 10) counted_rows++;
+    
+}	
+            // Clean up allocated memory before returning
+	}	
+    for (int i = 0; i < *row; i++) {
+            // Clean up allocated memory before returning
+
+    i = 0; j = 0; z = 0;
+	*avg = somma / l;
+    fseek(file, 0, SEEK_SET);
+
+}
+        return NULL;
+                m[i][j][z] = '\0';
+	printf("]\n");
+    for (int i = 0; i < *row; i++) {
+        }
+
+	//printing_matrix(csv_matrix, col, row);
+	while((c = fgetc(file)) != EOF){
+			*max = data[i];
+}
+		}
+	*avg = somma / l;
+}
+	//Operazioni di chiusura files e disallocazione
+	for(int i = 0; i < row; i++){
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+                m[i][j][z] = '\0';
+	close_f = fclose(my_f);
+		free(m[i]);
+        }
+	close_f = fclose(my_f);
+void populating_matrix(char *** m, int col, int row, FILE * file){
+	int counted_rows = 0;
+                        free(matrix[k][l]);
+	
+    }
+		for(int j = 0; j < col; j++){
+                    free(matrix[k]);
+#include <stdio.h>
+    counting_cols(col, file);
+
+        for (int j = 0; j < *col; j++) {
+    }
+            } else {
+		data_column_process(column, row, &min, &max, &avg);
+                // Add null terminator at the end of the string
+void printing_int_matrix(long ** m, int row, int col){
+
+            // Handle the case where i or j exceeds the allocated dimensions
+
+	my_f = fopen(argv[1], "r");
+}
+    // Add null terminator for the last string
+void printing_matrix(char *** matrix, int col, int row){
+    if (i < row && j < col) {
+void counting_rows(int * row, FILE * file){
+}
+	
+void populating_matrix(char *** m, int col, int row, FILE * file){
+    }
+
+            		m[i][j][z] = c;
+                return NULL;
+	*col = counted_cols;
+	int min, max;
+                j = 0;
+	for(int i = 0; i < length; i++){
+		for(int j = 0; j < col; j++){
+	*max = data[0];
+	for(int i = 0; i < length; i++){
+	
+            } else if (c == 10) {
+
+		for(int j = 0; j < col; j++){
+                free(matrix[j]);
+            		z++;
+int main(int argc, char * argv[]){
+void counting_cols(int * col, FILE * file){
+                // Add null terminator at the end of the string
+            if (c == 44) {
+			printf("[%d]", m[i][j]);
+                m[i][j][z] = '\0';
+	
+	free_matrix(matrix, row, col);
+            	if(c != 32){
+}
+	*col = counted_cols;
+}	
+	long ** ris = malloc(row * sizeof(*ris));
+    if (i < row && j < col) {
+    }
+	*max = data[0];
+    }
+int main(int argc, char * argv[]){
+		data_column_process(column, row, &min, &max, &avg);
+        return NULL;
+}
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+	    for (int i = 0; i < row; i++) {
+}
+    return matrix;
+
+                z = 0;
+void printing_matrix(char *** matrix, int col, int row){
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+	return ris;
+            break;
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+	double avg;
+    return matrix;
+	
+            }
+		printf("colonna %d: ", i+1);
+	for(int i = 0; i < row; i++){
+	}	
+		if(c == 44) counted_cols++;
+	for(int i = 0; i < row; i++){
+	double somma = 0;
+		if(c == 44) counted_cols++;
+                // Add null terminator at the end of the string
+void populating_matrix(char *** m, int col, int row, FILE * file){
+                        free(matrix[k][l]);
+	
+
+                }
+	printing_int_matrix(matrix, row, col);
+                z = 0;
+	*avg = 0;
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+                z = 0;
+	double l = length;
+    }
+            for (int j = 0; j < i; j++) {
+	calculating(matrix, row, col);
+            fprintf(stderr, "Memory allocation failed\n");
+        fprintf(stderr, "Invalid matrix dimensions\n");
+	for(int i = 0; i < row; i++){
+		}
+	int c;
+}
+
+	*col = counted_cols;
+            } else if (c == 10) {
+        fprintf(stderr, "Invalid matrix dimensions\n");
+	*avg = 0;
+	}
+                for (int k = 0; k <= i; k++) {
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+		for(int j = 0; j < col; j++){
+}
+}
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+    counting_rows(row, file);
+	for(int i = 0; i < row; i++){
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+	
+}
+}
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+        for (int j = 0; j < *col; j++) {
+    
+    if (matrix == NULL) {
+	
+void free_matrix(long ** m, int row, int col){
+            free(matrix);
+                        free(matrix[k][l]);
+	int counted_rows = 0;
+    
+
+                m[i][j][z] = '\0';
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+			*max = data[i];
+            // Clean up allocated memory before returning
+		printf("\n");
+    while ((c = fgetc(file)) != EOF) {
+                z = 0;
+	
+	printf("\n[ ");
+		printf("\n");
+	
+	for(int i = 0; i < row; i++){
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+
+	//printing_matrix(csv_matrix, col, row);
+    int c, i, j, z;
+        m[i][j][z] = '\0';
+
+		data_column_process(column, row, &min, &max, &avg);
+}
+        }
+        }
+
+		for (int j = 0; j < col; j++) {
+                free(matrix[j]);
+	int counted_cols = 1;
+	long ** ris = malloc(row * sizeof(*ris));
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+    // Add null terminator for the last string
+	double l = length;
+    }
+                // Clean up allocated memory before returning
+		ris[i] = malloc(col * sizeof(**ris));
+            if (c == 44) {
+	    for (int i = 0; i < row; i++) {
+}
+            free(matrix);
+                z = 0;
+		for(int j = 0; j < col; j++){
+
+	int close_f, row, col;
+        return NULL;
+	my_f = fopen(argv[1], "r");
+    }
+		printf("\n");
+			column[j] = (int) m[j][i];
+
+    fseek(file, 0, SEEK_SET);
+		if(data[i] < *min){
+            return NULL;
+                for (int k = 0; k <= i; k++) {
+            fprintf(stderr, "Memory allocation failed\n");
+	
+#include <string.h>
+
+
+                j = 0;
+void populating_matrix(char *** m, int col, int row, FILE * file){
+                free(matrix);
+                free(matrix);
+
+
+	int counted_cols = 1;
+		for(int j = 0; j < col; j++){
+                m[i][j][z] = '\0';
+
+    }
+	*min = data[0];
+
+#include <string.h>
+	int counted_rows = 0;
+        return NULL;
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+#define G 256
+		}
+                free(matrix);
+	close_f = fclose(my_f);
+        }
+		}
+			column[j] = (int) m[j][i];
+void calculating(long ** m, int row, int col){
+            if (matrix[i][j] == NULL) {
+    }
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+                // Clean up allocated memory before returning
+	free_matrix(matrix, row, col);
+            		m[i][j][z] = c;
+	*avg = somma / l;
+		if(c == 44) counted_cols++;
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+    fseek(file, 0, SEEK_SET);
+            		m[i][j][z] = c;
+	for(int i = 0; i < length; i++){
+        for (int j = 0; j < *col; j++) {
+		for(int j = 0; j < row; j++){
+	int counted_rows = 0;
+		for(int j = 0; j < col; j++){
+            	}
+	*avg = somma / l;
+
+    if (*row <= 0 || *col <= 0) {
+
+                        free(matrix[k][l]);
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+
+
+
+#include <string.h>
+
+            }
+		data_column_process(column, row, &min, &max, &avg);
+
+	
+    if (i < row && j < col) {
+        if (matrix[i] == NULL) {
+                return NULL;
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+		for(int j = 0; j < col; j++){
+            free(matrix);
+                        free(matrix[k][l]);
+
+		}
+	double somma = 0;
+            // Clean up allocated memory before returning
+
+}
+                    }
+#include <string.h>
+		if(c == 10) counted_rows++;
+            // Clean up allocated memory before returning
+                // Add null terminator at the end of the string
+    }
+    fseek(file, 0, SEEK_SET);
+	}
+                fprintf(stderr, "Memory allocation failed\n");
+    if (*row <= 0 || *col <= 0) {
+	*col = counted_cols;
+	printing_int_matrix(matrix, row, col);
+        for (int j = 0; j < *col; j++) {
+	//printing_matrix(csv_matrix, col, row);
+                        free(matrix[k][l]);
+        }
+                for (int k = 0; k <= i; k++) {
+    }
+	*avg = 0;
+	
+        if (i < row && j < col) {
+}
+}
+		}
+}
+    counting_cols(col, file);
+                free(matrix[j]);
+                        free(matrix[k][l]);
+		}
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+    counting_rows(row, file);
+        fprintf(stderr, "Memory allocation failed\n");
+	
+        if (matrix[i] == NULL) {
+
+
+	free_matrix(matrix, row, col);
+            break;
+	
+
+	*min = data[0];
+            } else if (c == 10) {
+	for(int i = 0; i < row; i++){
+
+void populating_matrix(char *** m, int col, int row, FILE * file){
+	}
+	for(int i = 0; i < length; i++){
+	*max = data[0];
+		}
+
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+	
+}
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+                for (int k = 0; k <= i; k++) {
+            }
+	
+		}
+
+		somma += data[i];	
+	
+        return NULL;
+    }
+
+	my_f = fopen(argv[1], "r");
+            		m[i][j][z] = c;
+void populating_matrix(char *** m, int col, int row, FILE * file){
+#include <stdlib.h>
+                return NULL;
+	while((c = fgetc(file)) != 10){
+}
+    }
+char *** generating_matrix(int * row, int * col, FILE * file) {
+    }
+}
+	long ** ris = malloc(row * sizeof(*ris));
+        if (matrix[i] == NULL) {
+            if (matrix[i][j] == NULL) {
+    fseek(file, 0, SEEK_SET);
+            } else if (c == 10) {
+	}
+	while((c = fgetc(file)) != 10){
+    
+	
+
+	*avg = 0;
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+	free(m);
+		}
+    }
+        }
+	printf("]\n");
+	    }
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+	for(int i = 0; i < length; i++){
+	while((c = fgetc(file)) != EOF){
+                z = 0;
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+		if(c == 10) counted_rows++;
+}
+    i = 0; j = 0; z = 0;
+	double somma = 0;
+                // Add null terminator at the end of the string
+                    for (int l = 0; l < j; l++) {
+	    }
+#include <string.h>
+                m[i][j][z] = '\0';
+
+                // Clean up allocated memory before returning
+            }
+		if(data[i] < *min){
+}
+	double l = length;
+}
+	for(int i = 0; i < row; i++){
+
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+void populating_matrix(char *** m, int col, int row, FILE * file){
+    // Add null terminator for the last string
+
+void free_matrix(long ** m, int row, int col){
+	
+	for(int i = 0; i < row; i++){
+	double l = length;
+		data_column_process(column, row, &min, &max, &avg);
+    }
+void calculating(long ** m, int row, int col){
+                j++;
+            }
+	    for (int i = 0; i < row; i++) {
+		for (int j = 0; j < col; j++) {
+	
+		if(data[i] < *min){
+    counting_cols(col, file);
+                m[i][j][z] = '\0';
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+            free(matrix);
+
+	
+	    }
+	    }
+    }
+	for(int i = 0; i < length; i++){
+		somma += data[i];	
+    return matrix;
+            free(matrix);
+
+        fprintf(stderr, "Memory allocation failed\n");
+	}	
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+                z = 0;
+
+	for(int i = 0; i < row; i++){
+	int min, max;
+        if (i < row && j < col) {
+void free_matrix(long ** m, int row, int col){
+    if (*row <= 0 || *col <= 0) {
+	int counted_cols = 1;
+
+		somma += data[i];	
+void populating_matrix(char *** m, int col, int row, FILE * file){
+		    printf("[%s]", matrix[i][j]);
+                free(matrix);
+		}
+            if (matrix[i][j] == NULL) {
+	*max = data[0];
+	while((c = fgetc(file)) != EOF){
+	//printing_matrix(csv_matrix, col, row);
+            }
+}
+#include <stdio.h>
+}
+            } else if (c == 10) {
+	for(int i = 0; i < length; i++){
+	}
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+            	if(c != 32){
+	
+            // Handle the case where i or j exceeds the allocated dimensions
+	
+    if (matrix == NULL) {
+                    for (int l = 0; l < j; l++) {
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+                z = 0;
+    if (*row <= 0 || *col <= 0) {
+
+int main(int argc, char * argv[]){
+	*avg = somma / l;
+			printf("[%d]", m[i][j]);
+	FILE * my_f;
+
+	my_f = fopen(argv[1], "r");
+	printing_int_matrix(matrix, row, col);
+        } else {
+	free_matrix(matrix, row, col);
+        }
+	int c;
+void populating_matrix(char *** m, int col, int row, FILE * file){
+                fprintf(stderr, "Memory allocation failed\n");
+
+	int min, max;
+	char * endptr;
+}
+
+        return NULL;
+	my_f = fopen(argv[1], "r");
+	
+	for(int i = 0; i < row; i++){
+	
+            } else if (c == 10) {
+	for(int i = 0; i < row; i++){
+	}
+		free(m[i]);
+		}
+    fseek(file, 0, SEEK_SET);
+        if (i < row && j < col) {
+	}
+            	}
+}
+        return NULL;
+        if (i < row && j < col) {
+
+        return NULL;
+            } else {
+                z = 0;
+        for (int j = 0; j < *col; j++) {
+	printf("]\n");
+
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+			*max = data[i];
+	char * endptr;
+	printing_int_matrix(matrix, row, col);
+	for(int i = 0; i < row; i++){
+	return ris;
+    counting_rows(row, file);
+		}
+		printf("\n");
+
+            break;
+	}
+	FILE * my_f;
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+	for(int i = 0; i < row; i++){
+}
+	*avg = 0;
+	close_f = fclose(my_f);
+	double somma = 0;
+	int counted_cols = 1;
+                // Add null terminator at the end of the string
+                j = 0;
+        fprintf(stderr, "Memory allocation failed\n");
+	    for (int i = 0; i < row; i++) {
+		}
+		}
+char *** generating_matrix(int * row, int * col, FILE * file) {
+            } else if (c == 10) {
+                    free(matrix[k]);
+
+void calculating(long ** m, int row, int col){
+		data_column_process(column, row, &min, &max, &avg);
+
+            fprintf(stderr, "Memory allocation failed\n");
+	int min, max;
+    i = 0; j = 0; z = 0;
+        if (i < row && j < col) {
+                m[i][j][z] = '\0';
+	}
+	for(int i = 0; i < col; i++){
+                free(matrix[j]);
+            if (c == 44) {
+	for(int i = 0; i < col; i++){
+            return NULL;
+
+			printf("[%d]", m[i][j]);
+                }
+    return matrix;
+	printf("\n[ ");
+    }
+		printf("\n");
+	printing_int_matrix(matrix, row, col);
+		ris[i] = malloc(col * sizeof(**ris));
+                // Add null terminator at the end of the string
+}
+    counting_rows(row, file);
+	*avg = somma / l;
+        if (matrix[i] == NULL) {
+
+    fseek(file, 0, SEEK_SET);
+		if(c == 10) counted_rows++;
+                // Clean up allocated memory before returning
+            } else {
+	*min = data[0];
+	
+	*row = counted_rows;
+#include <string.h>
+                z = 0;
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+int main(int argc, char * argv[]){
+    while ((c = fgetc(file)) != EOF) {
+	my_f = fopen(argv[1], "r");
+	*row = counted_rows;
+		}
+        fprintf(stderr, "Memory allocation failed\n");
+	}
+	}
+
+        }
+	long ** ris = malloc(row * sizeof(*ris));
+        fprintf(stderr, "Memory allocation failed\n");
+            		z++;
+    populating_matrix(matrix, *col, *row, file);
+}
+            for (int j = 0; j < i; j++) {
+	return ris;
+        }
+        fprintf(stderr, "Invalid matrix dimensions\n");
+	int counted_rows = 0;
+                m[i][j][z] = '\0';
+		}
+            }
+		printf("\n");
+
+
+	for(int i = 0; i < row; i++){
+            		m[i][j][z] = c;
+	int c;
+#define G 256
+}
+	    for (int i = 0; i < row; i++) {
+                // Add null terminator at the end of the string
+	*avg = 0;
+                i++;
+
+    i = 0; j = 0; z = 0;
+	int counted_cols = 1;
+void populating_matrix(char *** m, int col, int row, FILE * file){
+            if (c == 44) {
+		}
+	*min = data[0];
+			printf("[%d]", m[i][j]);
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+        return NULL;
+	printf("]\n");
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+
+
+	int * column = malloc(row * sizeof(*column));
+
+	
+void printing_int_matrix(long ** m, int row, int col){
+		}
+        m[i][j][z] = '\0';
+int main(int argc, char * argv[]){
+		if(data[i] < *min){
+	int c;
+            	}
+int main(int argc, char * argv[]){
+	}
+	close_f = fclose(my_f);
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+	int min, max;
+    
+	double somma = 0;
+
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+int main(int argc, char * argv[]){
+    if (i < row && j < col) {
+	int counted_rows = 0;
+	double somma = 0;
+	int counted_rows = 0;
+	int c;
+            }
+	
+	
+
+        }
+    }
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+
+    }
+                }
+    }
+                i++;
+
+                free(matrix);
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+                z = 0;
+	double l = length;
+    return matrix;
+            // Handle the case where i or j exceeds the allocated dimensions
+            if (c == 44) {
+        if (matrix[i] == NULL) {
+            for (int j = 0; j < i; j++) {
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+        }
+	my_f = fopen(argv[1], "r");
+	
+	//printing_matrix(csv_matrix, col, row);
+#include <string.h>
+	for(int i = 0; i < row; i++){
+void printing_matrix(char *** matrix, int col, int row){
+	while((c = fgetc(file)) != 10){
+	free_matrix(matrix, row, col);
+	//Operazioni di chiusura files e disallocazione
+	}
+            if (matrix[i][j] == NULL) {
+        return NULL;
+        }
+
+    }
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+	int min, max;
+	for(int i = 0; i < length; i++){
+#include <stdio.h>
+    while ((c = fgetc(file)) != EOF) {
+}
+
+                    for (int l = 0; l < j; l++) {
+    while ((c = fgetc(file)) != EOF) {
+
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+    if (*row <= 0 || *col <= 0) {
+		for(int j = 0; j < col; j++){
+                i++;
+        return NULL;
+                m[i][j][z] = '\0';
+void populating_matrix(char *** m, int col, int row, FILE * file){
+
+            }
+            }
+    
+    }
+            if (matrix[i][j] == NULL) {
+}
+        return NULL;
+        return NULL;
+	free(m);
+	*min = data[0];
+		for(int j = 0; j < row; j++){
+}
+	while((c = fgetc(file)) != 10){
+	return ris;
+#include <string.h>
+	FILE * my_f;
+	*max = data[0];
+            if (c == 44) {
+
+        if (matrix[i] == NULL) {
+		printf("\n");
+                        free(matrix[k][l]);
+
+        }
+	
+    counting_cols(col, file);
+	for(int i = 0; i < length; i++){
+        return NULL;
+	for(int i = 0; i < row; i++){
+		    printf("[%s]", matrix[i][j]);
+}
+	my_f = fopen(argv[1], "r");
+        fprintf(stderr, "Memory allocation failed\n");
+#include <stdio.h>
+
+		}
+}
+}
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+	free_matrix(matrix, row, col);
+                free(matrix[j]);
+            }
+		if(c == 44) counted_cols++;
+		for(int j = 0; j < col; j++){
+int main(int argc, char * argv[]){
+	*col = counted_cols;
+		printf("\n");
+	double l = length;
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+
+                m[i][j][z] = '\0';
+void counting_cols(int * col, FILE * file){
+                free(matrix);
+	for(int i = 0; i < col; i++){
+		for(int j = 0; j < col; j++){
+	
+                i++;
+
+	free_matrix(matrix, row, col);
+		data_column_process(column, row, &min, &max, &avg);
+}
+			*max = data[i];
+	*avg = somma / l;
+                j++;
+		}
+
+        if (i < row && j < col) {
+	    }
+	//printing_matrix(csv_matrix, col, row);
+    return matrix;
+	    for (int i = 0; i < row; i++) {
+    if (matrix == NULL) {
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+    int c, i, j, z;
+    i = 0; j = 0; z = 0;
+void calculating(long ** m, int row, int col){
+        fprintf(stderr, "Memory allocation failed\n");
+	int min, max;
+		ris[i] = malloc(col * sizeof(**ris));
+	}
+			column[j] = (int) m[j][i];
+		}else if(data[i] > *max){
+	    for (int i = 0; i < row; i++) {
+                    for (int l = 0; l < j; l++) {
+	printf("\n[ ");
+void free_matrix(long ** m, int row, int col){
+
+}
+        fprintf(stderr, "Invalid matrix dimensions\n");
+        if (i < row && j < col) {
+		printf("colonna %d: ", i+1);
+    i = 0; j = 0; z = 0;
+	//Operazioni di chiusura files e disallocazione
+		}
+    if (*row <= 0 || *col <= 0) {
+			*min = data[i];
+}
+    }
+	
+#include <stdlib.h>
+	int c;
+	int counted_rows = 0;
+                for (int k = 0; k <= i; k++) {
+	
+            	if(c != 32){
+void printing_int_matrix(long ** m, int row, int col){
+		data_column_process(column, row, &min, &max, &avg);
+	}
+                }
+                for (int k = 0; k <= i; k++) {
+
+                for (int k = 0; k <= i; k++) {
+        return NULL;
+	long ** ris = malloc(row * sizeof(*ris));
+}
+    while ((c = fgetc(file)) != EOF) {
+        fprintf(stderr, "Memory allocation failed\n");
+        m[i][j][z] = '\0';
+    
+	*avg = 0;
+            if (matrix[i][j] == NULL) {
+void populating_matrix(char *** m, int col, int row, FILE * file){
+	
+}
+
+        fprintf(stderr, "Memory allocation failed\n");
+        }
+	while((c = fgetc(file)) != 10){
+	//printing_matrix(csv_matrix, col, row);
+    for (int i = 0; i < *row; i++) {
+		if(c == 44) counted_cols++;
+    i = 0; j = 0; z = 0;
+                for (int k = 0; k <= i; k++) {
+	free(m);
+	int c;
+
+        fprintf(stderr, "Memory allocation failed\n");
+#include <string.h>
+
+
+		ris[i] = malloc(col * sizeof(**ris));
+	*col = counted_cols;
+	
+#include <string.h>
+
+		somma += data[i];	
+            break;
+	}
+	while((c = fgetc(file)) != 10){
+    }
+#include <stdlib.h>
+void free_matrix(long ** m, int row, int col){
+
+		    printf("[%s]", matrix[i][j]);
+            break;
+	for(int i = 0; i < col; i++){
+            // Clean up allocated memory before returning
+	*max = data[0];
+}
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+    
+                i++;
+	return ris;
+	*avg = 0;
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+	
+		ris[i] = malloc(col * sizeof(**ris));
+            }
+	
+                // Add null terminator at the end of the string
+    return matrix;
+
+        if (matrix[i] == NULL) {
+            break;
+		printf("\n");
+    i = 0; j = 0; z = 0;
+	*row = counted_rows;
+	
+        return NULL;
+                i++;
+	for(int i = 0; i < row; i++){
+    }
+	
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+                free(matrix[j]);
+}
+    }
+		}
+void counting_rows(int * row, FILE * file){
+        }
+        fprintf(stderr, "Invalid matrix dimensions\n");
+    counting_rows(row, file);
+                    }
+
+
+    return matrix;
+		}
+		somma += data[i];	
+	int c;
+	int min, max;
+}
+		}
+                return NULL;
+                free(matrix);
+
+                i++;
+}
+    int c, i, j, z;
+    }
+}
+            if (matrix[i][j] == NULL) {
+int main(int argc, char * argv[]){
+                        free(matrix[k][l]);
+                    free(matrix[k]);
+    counting_rows(row, file);
+	    }
+}
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+	
+
+
+    }
+    fseek(file, 0, SEEK_SET);
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+        if (matrix[i] == NULL) {
+            }
+                j++;
+
+    if (*row <= 0 || *col <= 0) {
+}
+    if (*row <= 0 || *col <= 0) {
+        }
+	*row = counted_rows;
+	}
+#include <stdio.h>
+    int c, i, j, z;
+	int counted_cols = 1;
+			*min = data[i];
+    for (int i = 0; i < *row; i++) {
+                    }
+}
+}	
+        if (matrix[i] == NULL) {
+                    for (int l = 0; l < j; l++) {
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+	
+}
+
+                for (int k = 0; k <= i; k++) {
+	long ** ris = malloc(row * sizeof(*ris));
+        } else {
+                    free(matrix[k]);
+	*row = counted_rows;
+void free_matrix(long ** m, int row, int col){
+
+		for(int j = 0; j < col; j++){
+            	}
+                free(matrix[j]);
+		    printf("[%s]", matrix[i][j]);
+		for(int j = 0; j < col; j++){
+	double avg;
+        return NULL;
+	}
+	    }
+        m[i][j][z] = '\0';
+                // Add null terminator at the end of the string
+    }
+                }
+	//Operazioni di chiusura files e disallocazione
+	free(m);
+		    printf("[%s]", matrix[i][j]);
+	
+		}
+    return matrix;
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+void populating_matrix(char *** m, int col, int row, FILE * file){
+            fprintf(stderr, "Memory allocation failed\n");
+            } else {
+                    }
+	my_f = fopen(argv[1], "r");
+	my_f = fopen(argv[1], "r");
+			column[j] = (int) m[j][i];
+    }
+	    for (int i = 0; i < row; i++) {
+	char * endptr;
+			*min = data[i];
+	*max = data[0];
+	//printing_matrix(csv_matrix, col, row);
+    counting_rows(row, file);
+		if(data[i] < *min){
+}
+    // Add null terminator for the last string
+    // Add null terminator for the last string
+void printing_int_matrix(long ** m, int row, int col){
+    counting_cols(col, file);
+}
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+
+                i++;
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+                fprintf(stderr, "Memory allocation failed\n");
+    if (*row <= 0 || *col <= 0) {
+	
+                i++;
+	my_f = fopen(argv[1], "r");
+                        free(matrix[k][l]);
+    }
+            return NULL;
+	int * column = malloc(row * sizeof(*column));
+}
+                // Clean up allocated memory before returning
+	printf("]\n");
+	
+		}
+
+
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+void printing_int_matrix(long ** m, int row, int col){
+		ris[i] = malloc(col * sizeof(**ris));
+            break;
+
+        if (i < row && j < col) {
+			printf("[%d]", m[i][j]);
+	int * column = malloc(row * sizeof(*column));
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+	    for (int i = 0; i < row; i++) {
+	
+	}
+		if(data[i] < *min){
+	
+void calculating(long ** m, int row, int col){
+            break;
+char *** generating_matrix(int * row, int * col, FILE * file) {
+	for(int i = 0; i < col; i++){
+                    for (int l = 0; l < j; l++) {
+    if (*row <= 0 || *col <= 0) {
+        for (int j = 0; j < *col; j++) {
+	
+	*avg = somma / l;
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+	int c;
+
+    if (i < row && j < col) {
+		printf("\n");
+        }
+                // Add null terminator at the end of the string
+void free_matrix(long ** m, int row, int col){
+    }
+	free_matrix(matrix, row, col);
+}
+	for(int i = 0; i < length; i++){
+		for(int j = 0; j < col; j++){
+	long ** ris = malloc(row * sizeof(*ris));
+
+
+                return NULL;
+	
+                i++;
+                return NULL;
+            if (matrix[i][j] == NULL) {
+                m[i][j][z] = '\0';
+        for (int j = 0; j < *col; j++) {
+	
+		for(int j = 0; j < col; j++){
+    fseek(file, 0, SEEK_SET);
+        fprintf(stderr, "Invalid matrix dimensions\n");
+		if(c == 10) counted_rows++;
+	FILE * my_f;
+                free(matrix[j]);
+	FILE * my_f;
+    fseek(file, 0, SEEK_SET);
+                }
+char *** generating_matrix(int * row, int * col, FILE * file) {
+	
+}
+		}else if(data[i] > *max){
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+    }
+        m[i][j][z] = '\0';
+	    for (int i = 0; i < row; i++) {
+	}
+                m[i][j][z] = '\0';
+
+        }
+	double somma = 0;
+            } else {
+	FILE * my_f;
+            }
+            return NULL;
+    }
+	
+	double somma = 0;
+void printing_matrix(char *** matrix, int col, int row){
+		}else if(data[i] > *max){
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+        }
+        } else {
+}
+            if (matrix[i][j] == NULL) {
+		free(m[i]);
+                fprintf(stderr, "Memory allocation failed\n");
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+    counting_rows(row, file);
+	*avg = somma / l;
+}
+#include <string.h>
+	free(m);
+                return NULL;
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+		if(c == 44) counted_cols++;
+
+	while((c = fgetc(file)) != EOF){
+
+                i++;
+        }
+            if (c == 44) {
+    populating_matrix(matrix, *col, *row, file);
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+		}
+	int counted_cols = 1;
+		for (int j = 0; j < col; j++) {
+		for(int j = 0; j < col; j++){
+			column[j] = (int) m[j][i];
+void populating_matrix(char *** m, int col, int row, FILE * file){
+}
+
+	}
+void calculating(long ** m, int row, int col){
+	my_f = fopen(argv[1], "r");
+            } else if (c == 10) {
+
+                    free(matrix[k]);
+		    printf("[%s]", matrix[i][j]);
+	*row = counted_rows;
+                free(matrix[j]);
+	}	
+
+            // Handle the case where i or j exceeds the allocated dimensions
+            	if(c != 32){
+                // Clean up allocated memory before returning
+        return NULL;
+		}
+
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+		if(c == 44) counted_cols++;
+	*col = counted_cols;
+#define G 256
+	}
+		free(m[i]);
+	*min = data[0];
+int main(int argc, char * argv[]){
+	int * column = malloc(row * sizeof(*column));
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+		if(data[i] < *min){
+#include <string.h>
+#include <stdio.h>
+            		m[i][j][z] = c;
+}
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+            break;
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+	for(int i = 0; i < row; i++){
+	}
+	int counted_rows = 0;
+}
+    fseek(file, 0, SEEK_SET);
+		printf("\n");
+			*max = data[i];
+	for(int i = 0; i < row; i++){
+		for (int j = 0; j < col; j++) {
+        fprintf(stderr, "Memory allocation failed\n");
+	int counted_cols = 1;
+void calculating(long ** m, int row, int col){
+	free_matrix(matrix, row, col);
+		printf("\n");
+	int c;
+                // Add null terminator at the end of the string
+
+	
+	my_f = fopen(argv[1], "r");
+
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+	for(int i = 0; i < length; i++){
+char *** generating_matrix(int * row, int * col, FILE * file) {
+void printing_int_matrix(long ** m, int row, int col){
+		data_column_process(column, row, &min, &max, &avg);
+            fprintf(stderr, "Memory allocation failed\n");
+#define G 256
+	}
+        return NULL;
+    // Add null terminator for the last string
+void printing_int_matrix(long ** m, int row, int col){
+	int c;
+                m[i][j][z] = '\0';
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+	for(int i = 0; i < col; i++){
+	}
+                free(matrix);
+		for(int j = 0; j < col; j++){
+    fseek(file, 0, SEEK_SET);
+
+	int c;
+}
+                    for (int l = 0; l < j; l++) {
+}
+	for(int i = 0; i < row; i++){
+			printf("[%d]", m[i][j]);
+            free(matrix);
+	printf("]\n");
+	}
+            if (matrix[i][j] == NULL) {
+	}
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+        fprintf(stderr, "Invalid matrix dimensions\n");
+	while((c = fgetc(file)) != 10){
+            if (c == 44) {
+            }
+    populating_matrix(matrix, *col, *row, file);
+                j++;
+	//Operazioni di chiusura files e disallocazione
+	    for (int i = 0; i < row; i++) {
+                // Clean up allocated memory before returning
+	*min = data[0];
+}
+		if(data[i] < *min){
+	char * endptr;
+	
+                free(matrix);
+                m[i][j][z] = '\0';
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+	
+			column[j] = (int) m[j][i];
+int main(int argc, char * argv[]){
+    populating_matrix(matrix, *col, *row, file);
+            if (matrix[i][j] == NULL) {
+void populating_matrix(char *** m, int col, int row, FILE * file){
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+    i = 0; j = 0; z = 0;
+void free_matrix(long ** m, int row, int col){
+    int c, i, j, z;
+			*max = data[i];
+                m[i][j][z] = '\0';
+	
+
+    return matrix;
+    while ((c = fgetc(file)) != EOF) {
+                    }
+	
+}
+	for(int i = 0; i < row; i++){
+#define G 256
+	double avg;
+    }
+	double l = length;
+	printing_int_matrix(matrix, row, col);
+}
+            }
+	    for (int i = 0; i < row; i++) {
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+	for(int i = 0; i < row; i++){
+	for(int i = 0; i < col; i++){
+void free_matrix(long ** m, int row, int col){
+    }
+	printf("]\n");
+        } else {
+		if(c == 44) counted_cols++;
+		for (int j = 0; j < col; j++) {
+	
+    // Add null terminator for the last string
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+}	
+                z = 0;
+		for (int j = 0; j < col; j++) {
+	
+		for(int j = 0; j < col; j++){
+	for(int i = 0; i < row; i++){
+	while((c = fgetc(file)) != 10){
+	*col = counted_cols;
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+	double avg;
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+	
+		free(m[i]);
+        } else {
+                    for (int l = 0; l < j; l++) {
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+        }
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+}	
+                m[i][j][z] = '\0';
+	}
+	printf("\n[ ");
+}	
+        return NULL;
+	return ris;
+            // Handle the case where i or j exceeds the allocated dimensions
+                    for (int l = 0; l < j; l++) {
+		}
+	FILE * my_f;
+			*max = data[i];
+                }
+	FILE * my_f;
+
+    populating_matrix(matrix, *col, *row, file);
+	for(int i = 0; i < col; i++){
+}
+            }
+}
+	free_matrix(matrix, row, col);
+		data_column_process(column, row, &min, &max, &avg);
+	
+	my_f = fopen(argv[1], "r");
+            }
+	*avg = 0;
+                j++;
+		}
+	}
+void printing_int_matrix(long ** m, int row, int col){
+}
+        }
+	double avg;
+	*avg = somma / l;
+}
+	double l = length;
+                j++;
+
+		if(c == 44) counted_cols++;
+void free_matrix(long ** m, int row, int col){
+void calculating(long ** m, int row, int col){
+}
+	}	
+        fprintf(stderr, "Invalid matrix dimensions\n");
+
+		free(m[i]);
+void printing_matrix(char *** matrix, int col, int row){
+	    for (int i = 0; i < row; i++) {
+    }
+        }
+void printing_matrix(char *** matrix, int col, int row){
+                }
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+	int c;
+            free(matrix);
+		somma += data[i];	
+
+	*max = data[0];
+	printing_int_matrix(matrix, row, col);
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+                    }
+
+	int counted_cols = 1;
+
+	//Operazioni di chiusura files e disallocazione
+                return NULL;
+            } else {
+                // Add null terminator at the end of the string
+	
+        }
+}
+            }
+	
+		ris[i] = malloc(col * sizeof(**ris));
+
+			printf("[%d]", m[i][j]);
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+		for (int j = 0; j < col; j++) {
+	for(int i = 0; i < row; i++){
+	
+    for (int i = 0; i < *row; i++) {
+}
+	
+}
+int main(int argc, char * argv[]){
+	    }
+                    }
+	int * column = malloc(row * sizeof(*column));
+
+}
+char *** generating_matrix(int * row, int * col, FILE * file) {
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+		}
+
+	}
+		for(int j = 0; j < col; j++){
+	}
+                z = 0;
+int main(int argc, char * argv[]){
+	for(int i = 0; i < length; i++){
+}
+
+
+}
+	}	
+char *** generating_matrix(int * row, int * col, FILE * file) {
+	*row = counted_rows;
+		for (int j = 0; j < col; j++) {
+        fprintf(stderr, "Invalid matrix dimensions\n");
+		}
+}
+		if(data[i] < *min){
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+}
+                fprintf(stderr, "Memory allocation failed\n");
+}
+	int min, max;
+}
+                        free(matrix[k][l]);
+	double l = length;
+			printf("[%d]", m[i][j]);
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+            if (c == 44) {
+
+                // Clean up allocated memory before returning
+        if (i < row && j < col) {
+	}
+		}
+
+}
+        for (int j = 0; j < *col; j++) {
+                // Add null terminator at the end of the string
+	    }
+			*max = data[i];
+                free(matrix);
+void printing_int_matrix(long ** m, int row, int col){
+	*col = counted_cols;
+		for(int j = 0; j < col; j++){
+			*min = data[i];
+                    }
+                return NULL;
+}	
+        return NULL;
+            break;
+	for(int i = 0; i < row; i++){
+	close_f = fclose(my_f);
+		for (int j = 0; j < col; j++) {
+            free(matrix);
+	}
+        }
+}
+	for(int i = 0; i < col; i++){
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+	for(int i = 0; i < row; i++){
+        }
+        if (i < row && j < col) {
+	printf("]\n");
+                    free(matrix[k]);
+	
+    // Add null terminator for the last string
+	for(int i = 0; i < row; i++){
+    counting_rows(row, file);
+                        free(matrix[k][l]);
+	}
+}
+		    printf("[%s]", matrix[i][j]);
+	char * endptr;
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+	*avg = 0;
+
+#include <stdio.h>
+        fprintf(stderr, "Memory allocation failed\n");
+        }
+        return NULL;
+			printf("[%d]", m[i][j]);
+	close_f = fclose(my_f);
+    if (matrix == NULL) {
+		somma += data[i];	
+        }
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+            free(matrix);
+	
+            free(matrix);
+		}
+        }
+
+                i++;
+    fseek(file, 0, SEEK_SET);
+            free(matrix);
+            if (c == 44) {
+	}
+	while((c = fgetc(file)) != 10){
+		for(int j = 0; j < col; j++){
+
+		printf("\n");
+	for(int i = 0; i < col; i++){
+    }
+		}
+            	}
+void populating_matrix(char *** m, int col, int row, FILE * file){
+
+            	}
+
+    }
+	double somma = 0;
+char *** generating_matrix(int * row, int * col, FILE * file) {
+        fprintf(stderr, "Memory allocation failed\n");
+
+
+		    printf("[%s]", matrix[i][j]);
+}
+		ris[i] = malloc(col * sizeof(**ris));
+}	
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+	*min = data[0];
+        }
+
+void counting_rows(int * row, FILE * file){
+int main(int argc, char * argv[]){
+	printf("]\n");
+            	}
+
+#include <string.h>
+		}
+			*max = data[i];
+}
+	int * column = malloc(row * sizeof(*column));
+                m[i][j][z] = '\0';
+	}
+void counting_cols(int * col, FILE * file){
+                free(matrix[j]);
+	for(int i = 0; i < row; i++){
+        fprintf(stderr, "Invalid matrix dimensions\n");
+	*row = counted_rows;
+                m[i][j][z] = '\0';
+                j = 0;
+            fprintf(stderr, "Memory allocation failed\n");
+	
+        for (int j = 0; j < *col; j++) {
+			printf("[%d]", m[i][j]);
+
+    }
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+
+}
+	}
+                j = 0;
+void printing_matrix(char *** matrix, int col, int row){
+        m[i][j][z] = '\0';
+	*col = counted_cols;
+
+
+		if(data[i] < *min){
+	FILE * my_f;
+        }
+	}
+	int c;
+    if (matrix == NULL) {
+	//Operazioni di chiusura files e disallocazione
+	*avg = 0;
+	for(int i = 0; i < row; i++){
+            fprintf(stderr, "Memory allocation failed\n");
+
+	int c;
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+		}else if(data[i] > *max){
+    if (i < row && j < col) {
+    int c, i, j, z;
+                    }
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+void calculating(long ** m, int row, int col){
+            // Handle the case where i or j exceeds the allocated dimensions
+                // Add null terminator at the end of the string
+
+		for (int j = 0; j < col; j++) {
+		printf("colonna %d: ", i+1);
+        }
+            }
+#define G 256
+	printf("\n[ ");
+                for (int k = 0; k <= i; k++) {
+
+            fprintf(stderr, "Memory allocation failed\n");
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+	
+	int c;
+            if (c == 44) {
+
+    return matrix;
+        } else {
+		for(int j = 0; j < row; j++){
+        } else {
+		}else if(data[i] > *max){
+    }
+    counting_rows(row, file);
+            fprintf(stderr, "Memory allocation failed\n");
+                free(matrix[j]);
+
+	long ** ris = malloc(row * sizeof(*ris));
+	calculating(matrix, row, col);
+                    free(matrix[k]);
+                return NULL;
+char *** generating_matrix(int * row, int * col, FILE * file) {
+void free_matrix(long ** m, int row, int col){
+	
+        fprintf(stderr, "Invalid matrix dimensions\n");
+	}
+            fprintf(stderr, "Memory allocation failed\n");
+	free(m);
+			*max = data[i];
+    if (i < row && j < col) {
+                j = 0;
+	*avg = somma / l;
+}
+		free(m[i]);
+	double avg;
+
+#include <stdio.h>
+	calculating(matrix, row, col);
+}
+        } else {
+	
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+void counting_rows(int * row, FILE * file){
+                fprintf(stderr, "Memory allocation failed\n");
+            break;
+                for (int k = 0; k <= i; k++) {
+	
+void printing_matrix(char *** matrix, int col, int row){
+	*row = counted_rows;
+#include <stdio.h>
+	}
+	free(m);
+    counting_rows(row, file);
+                free(matrix[j]);
+	
+void free_matrix(long ** m, int row, int col){
+            } else {
+	    for (int i = 0; i < row; i++) {
+            for (int j = 0; j < i; j++) {
+		printf("\n");
+
+	*avg = 0;
+	
+    i = 0; j = 0; z = 0;
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+}
+    while ((c = fgetc(file)) != EOF) {
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+	}
+void calculating(long ** m, int row, int col){
+	int min, max;
+
+	for(int i = 0; i < length; i++){
+
+        if (matrix[i] == NULL) {
+    
+                }
+            return NULL;
+    }
+		free(m[i]);
+        }
+	my_f = fopen(argv[1], "r");
+                free(matrix[j]);
+}	
+        for (int j = 0; j < *col; j++) {
+	*col = counted_cols;
+	}	
+	for(int i = 0; i < row; i++){
+    
+
+	double avg;
+                    for (int l = 0; l < j; l++) {
+
+}
+	*avg = 0;
+	for(int i = 0; i < row; i++){
+	for(int i = 0; i < row; i++){
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+        }
+void printing_int_matrix(long ** m, int row, int col){
+		printf("colonna %d: ", i+1);
+            } else {
+                    for (int l = 0; l < j; l++) {
+		for(int j = 0; j < col; j++){
+            	}
+	my_f = fopen(argv[1], "r");
+void calculating(long ** m, int row, int col){
+			column[j] = (int) m[j][i];
+        fprintf(stderr, "Memory allocation failed\n");
+	}
+	
+	printing_int_matrix(matrix, row, col);
+    i = 0; j = 0; z = 0;
+}
+	
+	}
+        }
+}
+            free(matrix);
+            return NULL;
+	free(m);
+}
+
+void calculating(long ** m, int row, int col){
+
+	
+        }
+	FILE * my_f;
+	
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+	char * endptr;
+	double avg;
+void counting_rows(int * row, FILE * file){
+                // Add null terminator at the end of the string
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+        if (matrix[i] == NULL) {
+                i++;
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+        m[i][j][z] = '\0';
+		free(m[i]);
+	for(int i = 0; i < row; i++){
+#include <stdlib.h>
+			printf("[%d]", m[i][j]);
+	
+
+	}
+	for(int i = 0; i < row; i++){
+            // Clean up allocated memory before returning
+                // Add null terminator at the end of the string
+    while ((c = fgetc(file)) != EOF) {
+}
+		    printf("[%s]", matrix[i][j]);
+                // Clean up allocated memory before returning
+void populating_matrix(char *** m, int col, int row, FILE * file){
+		}
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+            if (c == 44) {
+            fprintf(stderr, "Memory allocation failed\n");
+	double l = length;
+void populating_matrix(char *** m, int col, int row, FILE * file){
+
+    counting_cols(col, file);
+void counting_cols(int * col, FILE * file){
+                free(matrix);
+		}
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+	double avg;
+
+            }
+
+	}
+        } else {
+    fseek(file, 0, SEEK_SET);
+	int c;
+                    }
+}
+}
+	    }
+    }
+#define G 256
+		printf("\n");
+    counting_cols(col, file);
+                        free(matrix[k][l]);
+        m[i][j][z] = '\0';
+char *** generating_matrix(int * row, int * col, FILE * file) {
+    counting_cols(col, file);
+                fprintf(stderr, "Memory allocation failed\n");
+	
+void counting_cols(int * col, FILE * file){
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+
+    populating_matrix(matrix, *col, *row, file);
+	int min, max;
+	int * column = malloc(row * sizeof(*column));
+                j++;
+	
+			*max = data[i];
+void populating_matrix(char *** m, int col, int row, FILE * file){
+
+    
+
+void populating_matrix(char *** m, int col, int row, FILE * file){
+                return NULL;
+                // Add null terminator at the end of the string
+            // Handle the case where i or j exceeds the allocated dimensions
+
+        }
+
+                z = 0;
+	
+	int counted_cols = 1;
+    counting_cols(col, file);
+		}
+	free(m);
+	*max = data[0];
+        for (int j = 0; j < *col; j++) {
+	while((c = fgetc(file)) != EOF){
+            	if(c != 32){
+    counting_rows(row, file);
+    }
+	//Operazioni di chiusura files e disallocazione
+	double l = length;
+	int min, max;
+	
+	}	
+	    }
+            }
+                    free(matrix[k]);
+            } else if (c == 10) {
+    populating_matrix(matrix, *col, *row, file);
+	for(int i = 0; i < length; i++){
+		}
+	for(int i = 0; i < row; i++){
+    for (int i = 0; i < *row; i++) {
+            } else {
+	while((c = fgetc(file)) != EOF){
+    return matrix;
+                }
+                // Add null terminator at the end of the string
+	printf("\n[ ");
+                m[i][j][z] = '\0';
+}
+                i++;
+            }
+	*col = counted_cols;
+	free_matrix(matrix, row, col);
+
+                i++;
+
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+                    free(matrix[k]);
+        return NULL;
+		    printf("[%s]", matrix[i][j]);
+
+    fseek(file, 0, SEEK_SET);
+}
+                }
+	
+            // Handle the case where i or j exceeds the allocated dimensions
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+		}
+}
+	free_matrix(matrix, row, col);
+                free(matrix[j]);
+        for (int j = 0; j < *col; j++) {
+    }
+                free(matrix);
+		printf("\n");
+	my_f = fopen(argv[1], "r");
+		free(m[i]);
+	FILE * my_f;
+
+		if(c == 44) counted_cols++;
+	*col = counted_cols;
+                        free(matrix[k][l]);
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+	int counted_cols = 1;
+    counting_cols(col, file);
+	
+            for (int j = 0; j < i; j++) {
+	free(m);
+                // Add null terminator at the end of the string
+void calculating(long ** m, int row, int col){
+	*avg = 0;
+		}
+        }
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+            } else if (c == 10) {
+        } else {
+	}
+	*col = counted_cols;
+}	
+	int * column = malloc(row * sizeof(*column));
+                // Add null terminator at the end of the string
+    counting_cols(col, file);
+
+                }
+			column[j] = (int) m[j][i];
+        for (int j = 0; j < *col; j++) {
+            free(matrix);
+}
+    if (matrix == NULL) {
+
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+		}
+    }
+                z = 0;
+	double somma = 0;
+	double l = length;
+			*max = data[i];
+    // Add null terminator for the last string
+                fprintf(stderr, "Memory allocation failed\n");
+
+            } else {
+            	}
+void free_matrix(long ** m, int row, int col){
+                free(matrix);
+	printf("]\n");
+#define G 256
+			*min = data[i];
+}
+            		z++;
+		}else if(data[i] > *max){
+        if (matrix[i] == NULL) {
+        }
+
+	int min, max;
+	close_f = fclose(my_f);
+		if(c == 44) counted_cols++;
+
+        }
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+	}
+    fseek(file, 0, SEEK_SET);
+	double somma = 0;
+
+	double somma = 0;
+	calculating(matrix, row, col);
+                // Add null terminator at the end of the string
+                    free(matrix[k]);
+	printf("\n[ ");
+		ris[i] = malloc(col * sizeof(**ris));
+
+		printf("colonna %d: ", i+1);
+	int * column = malloc(row * sizeof(*column));
+            return NULL;
+	
+        for (int j = 0; j < *col; j++) {
+            	if(c != 32){
+	for(int i = 0; i < row; i++){
+        fprintf(stderr, "Invalid matrix dimensions\n");
+	FILE * my_f;
+	calculating(matrix, row, col);
+    
+    fseek(file, 0, SEEK_SET);
+            // Clean up allocated memory before returning
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+    // Add null terminator for the last string
+                }
+	return ris;
+		for(int j = 0; j < col; j++){
+    
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+                free(matrix[j]);
+	}	
+char *** generating_matrix(int * row, int * col, FILE * file) {
+
+        fprintf(stderr, "Invalid matrix dimensions\n");
+    if (i < row && j < col) {
+	int counted_cols = 1;
+	//Operazioni di chiusura files e disallocazione
+    
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+                // Add null terminator at the end of the string
+    int c, i, j, z;
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+}
+	double somma = 0;
+            		z++;
+}
+    return matrix;
+		free(m[i]);
+int main(int argc, char * argv[]){
+            }
+	close_f = fclose(my_f);
+    fseek(file, 0, SEEK_SET);
+	int c;
+                        free(matrix[k][l]);
+	return ris;
+	}
+    int c, i, j, z;
+        return NULL;
+	
+
+	*avg = somma / l;
+
+	int c;
+}
+		}
+        for (int j = 0; j < *col; j++) {
+	
+		for (int j = 0; j < col; j++) {
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+			column[j] = (int) m[j][i];
+
+}	
+}
+	free_matrix(matrix, row, col);
+	double l = length;
+#include <stdlib.h>
+	free_matrix(matrix, row, col);
+
+	*avg = somma / l;
+	//Operazioni di chiusura files e disallocazione
+	calculating(matrix, row, col);
+		somma += data[i];	
+    fseek(file, 0, SEEK_SET);
+		    printf("[%s]", matrix[i][j]);
+
+	}
+
+            if (matrix[i][j] == NULL) {
+
+}
+                i++;
+    if (matrix == NULL) {
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+    if (matrix == NULL) {
+	while((c = fgetc(file)) != 10){
+
+	for(int i = 0; i < col; i++){
+    while ((c = fgetc(file)) != EOF) {
+            free(matrix);
+	for(int i = 0; i < row; i++){
+}
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+	
+		}
+	double somma = 0;
+        for (int j = 0; j < *col; j++) {
+	FILE * my_f;
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+		}
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+		somma += data[i];	
+		for(int j = 0; j < row; j++){
+    populating_matrix(matrix, *col, *row, file);
+            	}
+	FILE * my_f;
+	
+    fseek(file, 0, SEEK_SET);
+}
+        }
+	int close_f, row, col;
+    fseek(file, 0, SEEK_SET);
+	for(int i = 0; i < length; i++){
+}
+		}
+        if (i < row && j < col) {
+            }
+}
+
+		}
+                    }
+	
+	calculating(matrix, row, col);
+    }
+
+	printf("]\n");
+}
+void populating_matrix(char *** m, int col, int row, FILE * file){
+			*min = data[i];
+	free_matrix(matrix, row, col);
+
+            }
+		data_column_process(column, row, &min, &max, &avg);
+	
+	*row = counted_rows;
+
+	int min, max;
+    while ((c = fgetc(file)) != EOF) {
+	for(int i = 0; i < row; i++){
+		ris[i] = malloc(col * sizeof(**ris));
+	}
+                }
+	calculating(matrix, row, col);
+                }
+	
+}
+		}else if(data[i] > *max){
+        for (int j = 0; j < *col; j++) {
+	int min, max;
+	
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+        fprintf(stderr, "Invalid matrix dimensions\n");
+int main(int argc, char * argv[]){
+    fseek(file, 0, SEEK_SET);
+	double somma = 0;
+	long ** ris = malloc(row * sizeof(*ris));
+                z = 0;
+
+	*min = data[0];
+	    for (int i = 0; i < row; i++) {
+	
+
+void printing_int_matrix(long ** m, int row, int col){
+		for(int j = 0; j < row; j++){
+void calculating(long ** m, int row, int col){
+	double avg;
+	while((c = fgetc(file)) != 10){
+
+		for (int j = 0; j < col; j++) {
+	free(m);
+    }
+	printf("\n[ ");
+    fseek(file, 0, SEEK_SET);
+        return NULL;
+    // Add null terminator for the last string
+    }
+    
+}
+	for(int i = 0; i < col; i++){
+void printing_matrix(char *** matrix, int col, int row){
+
+    fseek(file, 0, SEEK_SET);
+                fprintf(stderr, "Memory allocation failed\n");
+    i = 0; j = 0; z = 0;
+void free_matrix(long ** m, int row, int col){
+            		z++;
+	int min, max;
+		}
+            	}
+}
+    
+            } else {
+		ris[i] = malloc(col * sizeof(**ris));
+
+                // Add null terminator at the end of the string
+            }
+}
+    counting_rows(row, file);
+            		z++;
+
+    i = 0; j = 0; z = 0;
+void printing_int_matrix(long ** m, int row, int col){
+                        free(matrix[k][l]);
+                    free(matrix[k]);
+	}
+
+int main(int argc, char * argv[]){
+    }
+#include <string.h>
+			column[j] = (int) m[j][i];
+            fprintf(stderr, "Memory allocation failed\n");
+            	}
+                z = 0;
+	
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+        if (i < row && j < col) {
+        return NULL;
+	while((c = fgetc(file)) != EOF){
+            // Clean up allocated memory before returning
+	int c;
+            	}
+	printf("\n[ ");
+			printf("[%d]", m[i][j]);
+                m[i][j][z] = '\0';
+	while((c = fgetc(file)) != EOF){
+                z = 0;
+		data_column_process(column, row, &min, &max, &avg);
+                    free(matrix[k]);
+            if (matrix[i][j] == NULL) {
+	free(m);
+		printf("\n");
+            		m[i][j][z] = c;
+            	if(c != 32){
+        m[i][j][z] = '\0';
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+            		m[i][j][z] = c;
+}
+			*min = data[i];
+    fseek(file, 0, SEEK_SET);
+                m[i][j][z] = '\0';
+                j = 0;
+	}	
+        if (matrix[i] == NULL) {
+void populating_matrix(char *** m, int col, int row, FILE * file){
+	}
+
+char *** generating_matrix(int * row, int * col, FILE * file) {
+                        free(matrix[k][l]);
+
+	for(int i = 0; i < col; i++){
+	char * endptr;
+
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+        } else {
+}
+	*avg = somma / l;
+                for (int k = 0; k <= i; k++) {
+#include <stdio.h>
+                free(matrix[j]);
+		if(c == 10) counted_rows++;
+	*avg = somma / l;
+	}
+char *** generating_matrix(int * row, int * col, FILE * file) {
+    i = 0; j = 0; z = 0;
+            }
+	}
+
+	double avg;
+	
+	*avg = 0;
+
+	int * column = malloc(row * sizeof(*column));
+
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+#include <stdlib.h>
+	
+	    }
+            for (int j = 0; j < i; j++) {
+	while((c = fgetc(file)) != 10){
+
+    }
+	for(int i = 0; i < row; i++){
+	
+            		m[i][j][z] = c;
+	while((c = fgetc(file)) != EOF){
+		free(m[i]);
+	int counted_rows = 0;
+			printf("[%d]", m[i][j]);
+		somma += data[i];	
+                }
+	*avg = 0;
+	
+	double somma = 0;
+                z = 0;
+		}
+    if (matrix == NULL) {
+void printing_matrix(char *** matrix, int col, int row){
+                j = 0;
+    counting_cols(col, file);
+	
+}
+                    for (int l = 0; l < j; l++) {
+	long ** ris = malloc(row * sizeof(*ris));
+        for (int j = 0; j < *col; j++) {
+            if (c == 44) {
+	
+	}
+            } else {
+	}
+                i++;
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+	
+		for (int j = 0; j < col; j++) {
+}
+		data_column_process(column, row, &min, &max, &avg);
+                // Add null terminator at the end of the string
+    }
+void counting_rows(int * row, FILE * file){
+	}
+    }
+	long ** ris = malloc(row * sizeof(*ris));
+	double l = length;
+	
+                free(matrix[j]);
+
+	int * column = malloc(row * sizeof(*column));
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+                // Add null terminator at the end of the string
+	int counted_rows = 0;
+    }
+}
+    
+		data_column_process(column, row, &min, &max, &avg);
+                }
+	*min = data[0];
+	int counted_rows = 0;
+                m[i][j][z] = '\0';
+
+}
+
+    int c, i, j, z;
+
+}
+    // Add null terminator for the last string
+#define G 256
+}
+                        free(matrix[k][l]);
+                fprintf(stderr, "Memory allocation failed\n");
+void counting_rows(int * row, FILE * file){
+                    for (int l = 0; l < j; l++) {
+	for(int i = 0; i < length; i++){
+	double somma = 0;
+        fprintf(stderr, "Invalid matrix dimensions\n");
+	}
+        m[i][j][z] = '\0';
+                free(matrix);
+	for(int i = 0; i < row; i++){
+            		m[i][j][z] = c;
+		free(m[i]);
+void calculating(long ** m, int row, int col){
+		}
+	return ris;
+	int c;
+                return NULL;
+    while ((c = fgetc(file)) != EOF) {
+	
+	}	
+        fprintf(stderr, "Memory allocation failed\n");
+
+	    for (int i = 0; i < row; i++) {
+	int min, max;
+	calculating(matrix, row, col);
+            if (matrix[i][j] == NULL) {
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+            }
+	
+	
+	for(int i = 0; i < col; i++){
+	}
+	int c;
+        for (int j = 0; j < *col; j++) {
+	free_matrix(matrix, row, col);
+			column[j] = (int) m[j][i];
+void calculating(long ** m, int row, int col){
+			*min = data[i];
+            break;
+        return NULL;
+    return matrix;
+                free(matrix);
+                m[i][j][z] = '\0';
+
+            }
+void calculating(long ** m, int row, int col){
+                free(matrix);
+			*min = data[i];
+void printing_matrix(char *** matrix, int col, int row){
+    if (matrix == NULL) {
+                        free(matrix[k][l]);
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+                j++;
+            }
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+    i = 0; j = 0; z = 0;
+	int counted_cols = 1;
+
+                }
+		free(m[i]);
+            break;
+    if (matrix == NULL) {
+
+                for (int k = 0; k <= i; k++) {
+	for(int i = 0; i < col; i++){
+		}
+        for (int j = 0; j < *col; j++) {
+		}
+	printf("]\n");
+	double somma = 0;
+        }
+    counting_cols(col, file);
+
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+	double avg;
+	
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+    if (matrix == NULL) {
+                free(matrix[j]);
+                free(matrix[j]);
+		}
+	    }
+	calculating(matrix, row, col);
+        if (i < row && j < col) {
+		printf("\n");
+    counting_rows(row, file);
+            for (int j = 0; j < i; j++) {
+		}
+	for(int i = 0; i < row; i++){
+	calculating(matrix, row, col);
+                free(matrix);
+	    }
+            return NULL;
+            for (int j = 0; j < i; j++) {
+
+        if (matrix[i] == NULL) {
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+	    for (int i = 0; i < row; i++) {
+    counting_rows(row, file);
+                z = 0;
+	for(int i = 0; i < length; i++){
+		for(int j = 0; j < col; j++){
+
+    
+                z = 0;
+                    }
+int main(int argc, char * argv[]){
+		for(int j = 0; j < col; j++){
+
+            free(matrix);
+    while ((c = fgetc(file)) != EOF) {
+		printf("colonna %d: ", i+1);
+                        free(matrix[k][l]);
+	*col = counted_cols;
+    
+                j++;
+            if (matrix[i][j] == NULL) {
+	}	
+
+            		z++;
+			printf("[%d]", m[i][j]);
+
+        m[i][j][z] = '\0';
+            } else {
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+	double avg;
+	double l = length;
+}
+	//Operazioni di chiusura files e disallocazione
+}
+#include <stdlib.h>
+	printf("\n[ ");
+	*avg = somma / l;
+}
+		    printf("[%s]", matrix[i][j]);
+	    for (int i = 0; i < row; i++) {
+    
+	    }
+	double somma = 0;
+    while ((c = fgetc(file)) != EOF) {
+                        free(matrix[k][l]);
+	my_f = fopen(argv[1], "r");
+void counting_rows(int * row, FILE * file){
+void printing_matrix(char *** matrix, int col, int row){
+    
+            } else {
+
+	*max = data[0];
+	//printing_matrix(csv_matrix, col, row);
+                free(matrix);
+#include <string.h>
+		for(int j = 0; j < col; j++){
+        } else {
+
+	printing_int_matrix(matrix, row, col);
+        }
+        return NULL;
+	free(m);
+    counting_rows(row, file);
+
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+    fseek(file, 0, SEEK_SET);
+                z = 0;
+	double somma = 0;
+#include <stdlib.h>
+        fprintf(stderr, "Invalid matrix dimensions\n");
+		}
+    while ((c = fgetc(file)) != EOF) {
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+	}
+    fseek(file, 0, SEEK_SET);
+	
+	for(int i = 0; i < row; i++){
+                    free(matrix[k]);
+}
+void calculating(long ** m, int row, int col){
+	int min, max;
+        for (int j = 0; j < *col; j++) {
+	
+	}
+#include <stdlib.h>
+		ris[i] = malloc(col * sizeof(**ris));
+		for(int j = 0; j < col; j++){
+        fprintf(stderr, "Invalid matrix dimensions\n");
+void printing_matrix(char *** matrix, int col, int row){
+	char * endptr;
+#include <string.h>
+                // Clean up allocated memory before returning
+}
+    fseek(file, 0, SEEK_SET);
+	int min, max;
+            		m[i][j][z] = c;
+			*min = data[i];
+		if(c == 10) counted_rows++;
+#include <stdlib.h>
+	}
+    populating_matrix(matrix, *col, *row, file);
+	//Operazioni di chiusura files e disallocazione
+	int counted_rows = 0;
+	
+			ris[i][j] = strtol(input[i][j], &endptr, 10);
+                free(matrix);
+#define G 256
+        fprintf(stderr, "Memory allocation failed\n");
+}
+	int c;
+            	if(c != 32){
+	*row = counted_rows;
+	return ris;
+void calculating(long ** m, int row, int col){
+}
+}
+    }
+	for(int i = 0; i < row; i++){
+	while((c = fgetc(file)) != 10){
+	for(int i = 0; i < row; i++){
+                // Add null terminator at the end of the string
+	}
+    i = 0; j = 0; z = 0;
+		for(int j = 0; j < col; j++){
+	char * endptr;
+	int counted_cols = 1;
+		for(int j = 0; j < row; j++){
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+        m[i][j][z] = '\0';
+	free_matrix(matrix, row, col);
+        }
+	
+
+            return NULL;
+	int * column = malloc(row * sizeof(*column));
+		if(data[i] < *min){
+		if(c == 10) counted_rows++;
+	printing_int_matrix(matrix, row, col);
+                // Add null terminator at the end of the string
+                z = 0;
+	}
+            // Clean up allocated memory before returning
+
+	for(int i = 0; i < length; i++){
+    }
+        if (matrix[i] == NULL) {
+            }
+void printing_matrix(char *** matrix, int col, int row){
+		printf("\n");
+void printing_int_matrix(long ** m, int row, int col){
+}
+
+			*max = data[i];
+	printing_int_matrix(matrix, row, col);
+	close_f = fclose(my_f);
+    if (matrix == NULL) {
+	while((c = fgetc(file)) != EOF){
+	printing_int_matrix(matrix, row, col);
+			column[j] = (int) m[j][i];
+    if (matrix == NULL) {
+		    printf("[%s]", matrix[i][j]);
+    
+            	}
+}
+	free(m);
+                z = 0;
+		data_column_process(column, row, &min, &max, &avg);
+	}
+        } else {
+	while((c = fgetc(file)) != EOF){
+	    }
+        return NULL;
+	
+            if (matrix[i][j] == NULL) {
+                // Add null terminator at the end of the string
+}
+int main(int argc, char * argv[]){
+	free(m);
+	int counted_cols = 1;
+}
+                // Clean up allocated memory before returning
+	}
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+        fprintf(stderr, "Memory allocation failed\n");
+	printf("]\n");
+
+		printf("colonna %d: ", i+1);
+	calculating(matrix, row, col);
+        return NULL;
+	printf("\n[ ");
+
+
+		    printf("[%s]", matrix[i][j]);
+	for(int i = 0; i < row; i++){
+	}	
+	*avg = 0;
+
+                    for (int l = 0; l < j; l++) {
+		}
+        }
+		printf("\n");
+
+	for(int i = 0; i < length; i++){
+        m[i][j][z] = '\0';
+
+	free_matrix(matrix, row, col);
+        return NULL;
+char *** generating_matrix(int * row, int * col, FILE * file) {
+		}else if(data[i] > *max){
+                }
+    if (matrix == NULL) {
+    if (matrix == NULL) {
+            for (int j = 0; j < i; j++) {
+		somma += data[i];	
+		if(data[i] < *min){
+
+
+		}
+
+
+            free(matrix);
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+                // Add null terminator at the end of the string
+	long ** ris = malloc(row * sizeof(*ris));
+    populating_matrix(matrix, *col, *row, file);
+	
+            free(matrix);
+		for(int j = 0; j < col; j++){
+            fprintf(stderr, "Memory allocation failed\n");
+}
+}
+                m[i][j][z] = '\0';
+	//Operazioni di chiusura files e disallocazione
+void calculating(long ** m, int row, int col){
+		for(int j = 0; j < col; j++){
+    }
+	FILE * my_f;
+	    for (int i = 0; i < row; i++) {
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+		free(m[i]);
+	return ris;
+                z = 0;
+	int c;
+                // Add null terminator at the end of the string
+	    }
+#include <stdlib.h>
+		ris[i] = malloc(col * sizeof(**ris));
+    }
+		printf("\n");
+}
+        if (i < row && j < col) {
+            	if(c != 32){
+}
+                // Clean up allocated memory before returning
+}
+    if (matrix == NULL) {
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+    if (matrix == NULL) {
+    i = 0; j = 0; z = 0;
+	
+            }
+                i++;
+    while ((c = fgetc(file)) != EOF) {
+                }
+    i = 0; j = 0; z = 0;
+		}else if(data[i] > *max){
+	my_f = fopen(argv[1], "r");
+	while((c = fgetc(file)) != EOF){
+	
+	printf("\n[ ");
+			*max = data[i];
+		for(int j = 0; j < col; j++){
+#include <stdlib.h>
+
+	printing_int_matrix(matrix, row, col);
+void populating_matrix(char *** m, int col, int row, FILE * file){
+void printing_matrix(char *** matrix, int col, int row){
+    return matrix;
+		}
+		somma += data[i];	
+
+int main(int argc, char * argv[]){
+void populating_matrix(char *** m, int col, int row, FILE * file){
+        return NULL;
+    }
+	}
+		data_column_process(column, row, &min, &max, &avg);
+	
+            if (matrix[i][j] == NULL) {
+
+	
+void printing_matrix(char *** matrix, int col, int row){
+
+void populating_matrix(char *** m, int col, int row, FILE * file){
+	
+
+	    }
+		for(int j = 0; j < col; j++){
+}
+	int counted_rows = 0;
+                free(matrix[j]);
+            }
+	int * column = malloc(row * sizeof(*column));
+    }
+}
+		}
+void free_matrix(long ** m, int row, int col){
+	printf("]\n");
+    }
+    fseek(file, 0, SEEK_SET);
+	}
+		}
+    fseek(file, 0, SEEK_SET);
+	int * column = malloc(row * sizeof(*column));
+                free(matrix[j]);
+	
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+            // Clean up allocated memory before returning
+		if(data[i] < *min){
+                }
+	
+	printf("\n[ ");
+	
+	//Operazioni di chiusura files e disallocazione
+void printing_matrix(char *** matrix, int col, int row){
+    }
+		}
+    while ((c = fgetc(file)) != EOF) {
+	calculating(matrix, row, col);
+        fprintf(stderr, "Invalid matrix dimensions\n");
+            		z++;
+                        free(matrix[k][l]);
+#include <string.h>
+}
+
+	double l = length;
+#include <string.h>
+	for(int i = 0; i < col; i++){
+	}
+    if (matrix == NULL) {
+    }
+char *** generating_matrix(int * row, int * col, FILE * file) {
+            // Clean up allocated memory before returning
+void printing_int_matrix(long ** m, int row, int col){
+        }
+	
+                free(matrix);
+
+    for (int i = 0; i < *row; i++) {
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+	int min, max;
+
+    }
+                for (int k = 0; k <= i; k++) {
+}
+    for (int i = 0; i < *row; i++) {
+			*min = data[i];
+}
+	long ** ris = malloc(row * sizeof(*ris));
+	double avg;
+    if (i < row && j < col) {
+	//printing_matrix(csv_matrix, col, row);
+
+    }
+}
+                return NULL;
+    while ((c = fgetc(file)) != EOF) {
+    int c, i, j, z;
+                for (int k = 0; k <= i; k++) {
+		somma += data[i];	
+	return ris;
+		}
+void populating_matrix(char *** m, int col, int row, FILE * file){
+            if (c == 44) {
+}
+            for (int j = 0; j < i; j++) {
+    i = 0; j = 0; z = 0;
+
+	*avg = 0;
+			printf("[%d]", m[i][j]);
+		for(int j = 0; j < col; j++){
+		free(m[i]);
+			*min = data[i];
+	FILE * my_f;
+                i++;
+}
+            fprintf(stderr, "Memory allocation failed\n");
+	int c;
+	
+	    for (int i = 0; i < row; i++) {
+	int c;
+                z = 0;
+	int c;
+        }
+	}
+                m[i][j][z] = '\0';
+	int counted_rows = 0;
+		somma += data[i];	
+    }
+
+		}
+	while((c = fgetc(file)) != 10){
+            if (matrix[i][j] == NULL) {
+		printf("colonna %d: ", i+1);
+    }
+
+        if (matrix[i] == NULL) {
+}
+        } else {
+    }
+    fseek(file, 0, SEEK_SET);
+		data_column_process(column, row, &min, &max, &avg);
+#define G 256
+
+
+char *** generating_matrix(int * row, int * col, FILE * file) {
+            		m[i][j][z] = c;
+    fseek(file, 0, SEEK_SET);
+            }
+    while ((c = fgetc(file)) != EOF) {
+
+                }
+                    for (int l = 0; l < j; l++) {
+        }
+    
+
+	double l = length;
+            		m[i][j][z] = c;
+
+            	if(c != 32){
+	
+			*min = data[i];
+        fprintf(stderr, "Invalid matrix dimensions\n");
+                        free(matrix[k][l]);
+		}
+		}
+}
+            } else if (c == 10) {
+            	}
+	
+                    for (int l = 0; l < j; l++) {
+	}	
+	
+	
+	
+
+		printf("\n");
+            } else if (c == 10) {
+            break;
+	
+            matrix[i][j] = (char *)malloc(64 * sizeof(***matrix));
+	*max = data[0];
+	int counted_cols = 1;
+	close_f = fclose(my_f);
+    // Add null terminator for the last string
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+            } else {
+void populating_matrix(char *** m, int col, int row, FILE * file){
+	}
+    if (i < row && j < col) {
+        fprintf(stderr, "Memory allocation failed\n");
+void printing_int_matrix(long ** m, int row, int col){
+}
+	printf("\n[ ");
+            // Handle the case where i or j exceeds the allocated dimensions
+		}
+            free(matrix);
+	//printing_matrix(csv_matrix, col, row);
+	*row = counted_rows;
+		}
+		}
+}
+                }
+		somma += data[i];	
+
+            if (matrix[i][j] == NULL) {
+	*max = data[0];
+            return NULL;
+		if(data[i] < *min){
+		for (int j = 0; j < col; j++) {
+}
+            // Handle the case where i or j exceeds the allocated dimensions
+	for(int i = 0; i < length; i++){
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+
+        if (i < row && j < col) {
+	for(int i = 0; i < row; i++){
+	
+char *** generating_matrix(int * row, int * col, FILE * file) {
+    }
+}	
+
+    
+#include <stdlib.h>
+		ris[i] = malloc(col * sizeof(**ris));
+            for (int j = 0; j < i; j++) {
+		printf("colonna %d: ", i+1);
+    int c, i, j, z;
+    char *** matrix = (char ***)malloc(*row * sizeof(*matrix));
+	while((c = fgetc(file)) != EOF){
+	
+        return NULL;
+	printf("]\n");
+	long ** ris = malloc(row * sizeof(*ris));
+                // Add null terminator at the end of the string
+    }
+    while ((c = fgetc(file)) != EOF) {
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+	*max = data[0];
+	calculating(matrix, row, col);
+	int c;
+		}
+            	if(c != 32){
+	double avg;
+	}
+	for(int i = 0; i < row; i++){
+	}
+	double avg;
+                z = 0;
+
+        } else {
+                z = 0;
+            } else if (c == 10) {
+            // Clean up allocated memory before returning
+        m[i][j][z] = '\0';
+		somma += data[i];	
+			column[j] = (int) m[j][i];
+    }
+	int c;
+        fprintf(stderr, "Invalid matrix dimensions\n");
+    }
+		printf("\n");
+void data_column_process(int * data, int length, int * min, int * max, double * avg){
+            	}
+
+	my_f = fopen(argv[1], "r");
+
+	FILE * my_f;
+	
+        m[i][j][z] = '\0';
+		}
+		}
+                m[i][j][z] = '\0';
+                i++;
+#include <stdio.h>
+    }
+	printf("min= %d, max= %d, avg= %lf\n", *min, *max, *avg);
+	}
+        } else {
+		if(c == 44) counted_cols++;
+
+                return NULL;
+            fprintf(stderr, "Memory allocation failed\n");
+#define G 256
+void counting_rows(int * row, FILE * file){
+
+	
+		}
+	    for (int i = 0; i < row; i++) {
+#include <stdlib.h>
+
+                    for (int l = 0; l < j; l++) {
+	    }
+void populating_matrix(char *** m, int col, int row, FILE * file){
+	*avg = 0;
+		printf("colonna %d: ", i+1);
+            if (c == 44) {
+    for (int i = 0; i < *row; i++) {
+			*max = data[i];
+            		z++;
+	}
+	}
+    if (matrix == NULL) {
+		    printf("[%s]", matrix[i][j]);
+#define G 256
+    if (matrix == NULL) {
+                free(matrix[j]);
+void calculating(long ** m, int row, int col){
+		for(int j = 0; j < col; j++){
+	for(int i = 0; i < row; i++){
+	int c;
+char *** generating_matrix(int * row, int * col, FILE * file) {
+    fseek(file, 0, SEEK_SET);
+                    for (int l = 0; l < j; l++) {
+    counting_cols(col, file);
+
+            	if(c != 32){
+        return NULL;
+            return NULL;
+        return NULL;
+    }
+		for(int j = 0; j < row; j++){
+			column[j] = (int) m[j][i];
+                free(matrix);
+		if(c == 44) counted_cols++;
+	
+        matrix[i] = (char **)malloc(*col * sizeof(**matrix));
+
+
+                j = 0;
+	for(int i = 0; i < row; i++){
+		printf("colonna %d: ", i+1);
+
+
+	
+		    printf("[%s]", matrix[i][j]);
+    populating_matrix(matrix, *col, *row, file);
+        for (int j = 0; j < *col; j++) {
+	
+            if (c == 44) {
+                // Add null terminator at the end of the string
+void populating_matrix(char *** m, int col, int row, FILE * file){
+	
+		}
+
+
+		printf("\n");
+#include <stdlib.h>
+            for (int j = 0; j < i; j++) {
+		ris[i] = malloc(col * sizeof(**ris));
+    }
+	}
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+            	}
+    fseek(file, 0, SEEK_SET);
+	for(int i = 0; i < row; i++){
+#include <stdlib.h>
+	for(int e = 0; e < length; e++) printf("%d ", data[e]);
+	while((c = fgetc(file)) != 10){
+    i = 0; j = 0; z = 0;
+}
+		data_column_process(column, row, &min, &max, &avg);
+
+                i++;
+	printing_int_matrix(matrix, row, col);
+        if (i < row && j < col) {
+
+                    free(matrix[k]);
+}
+    counting_rows(row, file);
+		}else if(data[i] > *max){
+	char *** csv_matrix = generating_matrix(&row, &col, my_f);
+                // Clean up allocated memory before returning
+                    free(matrix[k]);
+
+            	}
+long ** from_char_matrix_to_int_matrix(char *** input, int row, int col){
+	free(m);
+            }
+	int counted_cols = 1;
+char *** generating_matrix(int * row, int * col, FILE * file) {
+
+	//printing_matrix(csv_matrix, col, row);
+	FILE * my_f;
+	}
+        fprintf(stderr, "Memory allocation failed\n");
+	free(m);
+	*row = counted_rows;
+            // Handle the case where i or j exceeds the allocated dimensions
+	long ** matrix = from_char_matrix_to_int_matrix(csv_matrix, row, col);
+    if (*row <= 0 || *col <= 0) {
+        return NULL;
+	int * column = malloc(row * sizeof(*column));
+                    }
+	}
+
+		if(data[i] < *min){
+	    }
+                }
+                free(matrix[j]);
+        fprintf(stderr, "Memory allocation failed\n");
+
+    if (matrix == NULL) {
+	close_f = fclose(my_f);
+	//printing_matrix(csv_matrix, col, row);
+void counting_rows(int * row, FILE * file){
+            		m[i][j][z] = c;
+                free(matrix);
+			*min = data[i];
+		ris[i] = malloc(col * sizeof(**ris));
+	*max = data[0];
+                z = 0;
+    fseek(file, 0, SEEK_SET);
+			*min = data[i];
+            		m[i][j][z] = c;
+            for (int j = 0; j < i; j++) {
+                m[i][j][z] = '\0';
+	int counted_rows = 0;
+		}
+        }
+		for (int j = 0; j < col; j++) {
+#include <stdio.h>
+	
+	
+	
+}
+		data_column_process(column, row, &min, &max, &avg);
+    }
+	for(int i = 0; i < length; i++){
+    for (int i = 0; i < *row; i++) {
+	double avg;
+            if (c == 44) {
+void calculating(long ** m, int row, int col){
+    counting_cols(col, file);
+            fprintf(stderr, "Error: Matrix dimensions exceeded\n");
+		if(data[i] < *min){
+    for (int i = 0; i < *row; i++) {
+                }

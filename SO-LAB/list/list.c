@@ -1,68 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef struct node {
-	int value;
-	struct node * next;   /* Puntatore alla stessa struttura */
-} node;
-
-typedef node* list;
-
-/*
- * Assume che la lista sia in ordine crescente e inserisce un elemento
- * con campo "value" uguale a val preservando l'ordinamento
- */
-list list_insert_ordered(list p, int val);
-
-/*
- * Concatena due liste
- */
-list list_cat(list before, list after);
-
-/*
- * Inserisce un elemento il testa alla lista
- */
-list list_insert_head(list p, int val);
-
-/*
- * Inserisce un elemento in coda alla lista
- */
-list list_insert_tail(list p, int val);
-
-/*
- * Stampa il contenuto della lista
- */
-void list_print(list p);
-
-/*
- * Dealloca la memoria occupata da ciascu elemento della lista
- */
-
-void list_free(list p);
-
-int main()
-{
-	list head = NULL, l2 = NULL;
-
-	/* Inserisci alcuni valori a caso */
-	head = list_insert_tail(head,15);
-	head = list_insert_head(head, 10);
-	head = list_insert_head(head, 2);
-	head = list_insert_tail(head,17);
-	list_print(head);
-	head = list_insert_ordered(head, 1);
-	list_print(head);
-	head = list_insert_ordered(head, 20);
-	list_print(head);
-	head = list_insert_ordered(head, 13);
-	l2 = list_insert_ordered(l2, 50);
-	list_print(l2);
-	head = list_cat(head, l2);
-	list_print(head);
-	list_free(head);
-
-	return 0;
-}
+#include "list.h"
 
 list list_insert_head(list p, int val)
 {
@@ -143,4 +81,60 @@ list list_insert_tail(list p, int val)
 	/* Scorri la lista ricorsivamente fino in fondo */
 	p->next = list_insert_tail(p->next, val);
 	return p;
+}
+
+list list_delete_if(list head, int to_delete){
+	list dummy = head;
+	list prev = NULL;
+	
+	if(head == NULL){
+		return head;
+	}
+	
+	for(; dummy != NULL && dummy->value != to_delete; dummy = dummy->next){
+		prev = list_insert_tail(prev, dummy->value);
+	}
+	prev = list_cat(prev, dummy->next);
+
+	return prev;
+}
+
+list list_delete_odd(list head){
+	int count = 1;
+	list ris = head;
+	
+	if(head == NULL){
+		return head;
+	}
+	
+	for(; head != NULL; head = head->next, count++){
+		if(count % 2 != 0){
+			ris = list_delete_if(ris, head->value);
+		}
+	}
+	
+	return ris;
+}
+
+list list_delete_cut_below(list head, int cut_val){
+	list ris = head;
+	if(head == NULL){
+		return head;
+	}
+	for(; head != NULL; head = head->next){
+		if(head->value < cut_val){
+			ris = list_delete_if(head, head->value);
+		}
+	}
+	return ris;
+}
+
+list list_dup(list head){
+	list ris = NULL;
+ 	
+	if(head != NULL){
+		for(;head != NULL; head = head->next) ris = list_insert_tail(ris, head->value);
+	}
+	
+	return ris;
 }
